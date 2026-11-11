@@ -1,0 +1,25 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 720
+PlayResY: 1280
+WrapStyle: 0
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Default,Arial,44,&H00FFFFFF,&H0000FFFF,&H00101010,&H80000000,-1,0,0,0,100,100,0,0,1,3,1,5,35,35,0,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:01.18,Default,,0,0,0,,{\pos(360,545)\q0}CHAT, IS THIS NOT ME?
+Dialogue: 0,0:00:02.32,0:00:03.60,Default,,0,0,0,,{\pos(360,545)\q0}IT'S GOTTA BE YOU.
+Dialogue: 0,0:00:04.16,0:00:05.40,Default,,0,0,0,,{\pos(360,545)\q0}YOU'RE THE ONLY ONE WHO WEARS THOSE COLORS.
+Dialogue: 0,0:00:05.40,0:00:06.64,Default,,0,0,0,,{\pos(360,545)\q0}WELL, YOU'RE NOT THE ONLY ONE WHO WEARS THOSE COLORS.
+Dialogue: 0,0:00:06.72,0:00:07.76,Default,,0,0,0,,{\pos(360,545)\q0}IS THIS NOT ME?
+Dialogue: 0,0:00:07.76,0:00:09.62,Default,,0,0,0,,{\pos(360,545)\q0}WAIT, DID THEY ACTUALLY PUT ME IN THE GAME?
+Dialogue: 0,0:00:10.02,0:00:11.26,Default,,0,0,0,,{\pos(360,545)\q0}THEY PUT ME IN THE GAME?
+Dialogue: 0,0:00:11.40,0:00:12.08,Default,,0,0,0,,{\pos(360,545)\q0}IS THIS REAL OR FAKE?
+Dialogue: 0,0:00:13.18,0:00:14.40,Default,,0,0,0,,{\pos(360,545)\q0}WHERE IS THAT AT IN THE TRAILER?
+Dialogue: 0,0:00:16.28,0:00:17.34,Default,,0,0,0,,{\pos(360,545)\q0}IT'S RIGHT HERE.
+Dialogue: 0,0:00:17.74,0:00:18.72,Default,,0,0,0,,{\pos(360,545)\q0}IT'S FAKE, BRO.
+Dialogue: 0,0:00:18.92,0:00:19.68,Default,,0,0,0,,{\pos(360,545)\q0}THAT SHIT IS FAKE.
+Dialogue: 1,0:00:00.00,0:00:19.68,Default,,0,0,0,,{\pos(360,105)\fs29}REAÇÃO AO VÍDEO ORIGINAL

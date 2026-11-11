@@ -1,0 +1,6 @@
+{
+  "ffmpeg": "CAMINHO_DO_EXECUTAVEL_ffmpeg",
+  "ffprobe": "CAMINHO_DO_EXECUTAVEL_ffprobe",
+  "yt-dlp": "CAMINHO_DO_EXECUTAVEL_yt-dlp",
+  "deno": "CAMINHO_DO_EXECUTAVEL_deno"
+}

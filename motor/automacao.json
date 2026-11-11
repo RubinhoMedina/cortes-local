@@ -1,0 +1,8 @@
+{
+  "minimum_seconds": 12,
+  "maximum_seconds": 40,
+  "max_clips": 6,
+  "terms": ["gta", "franklin", "lester", "michael", "lucia", "game", "jogo", "trailer", "brazilian", "brasileira"],
+  "context_title": "REAÇÃO AO VÍDEO ORIGINAL",
+  "sources": [{"path": "piloto-fonte.mp4", "start": 918, "end": 957}]
+}

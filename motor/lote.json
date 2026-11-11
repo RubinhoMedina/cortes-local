@@ -1,0 +1,183 @@
+{
+  "url": "https://www.youtube.com/watch?v=E07OTlhncP0",
+  "transcript": "audio.json",
+  "clips": [
+    {
+      "id": 2,
+      "start": 69,
+      "end": 100,
+      "edit": [
+        [
+          70,
+          73
+        ],
+        [
+          76,
+          81
+        ],
+        [
+          82.8,
+          98.55
+        ]
+      ],
+      "title": "",
+      "lines": [
+        "Chat, é o Franklin?",
+        "É o Franklin?",
+        "Pera, o Franklin?",
+        "Não, chat. Qual é o…",
+        "É o Franklin?",
+        "O Franklin não é negro?",
+        "Não, não é o Franklin!",
+        "Você quer dizer… Lester. Não, Lester não.",
+        "Não é o Lester.",
+        "Ah…",
+        "Lester não.",
+        "Hum…",
+        "Droga, qual era o nome dele?",
+        "Michael.",
+        "Michael.",
+        "Michael.",
+        "Isso!",
+        "É o Michael ou não, chat?"
+      ]
+    },
+    {
+      "id": 3,
+      "start": 236,
+      "end": 262,
+      "edit": [
+        [
+          244.15,
+          255.5
+        ]
+      ],
+      "title": "",
+      "lines": [
+        "Ali, ó.",
+        "Agora você é o Travis Scott.",
+        "Que papo é esse?",
+        "Esse cara não parece comigo, mano.",
+        "Vocês têm o mesmo nariz.",
+        "Mano, para de zoar comigo!",
+        "Foi mal, foi mal.",
+        "Não parece comigo."
+      ]
+    },
+    {
+      "id": 4,
+      "start": 345,
+      "end": 370,
+      "edit": [
+        [
+          349.7,
+          354.95
+        ],
+        [
+          359.45,
+          368.2
+        ]
+      ],
+      "title": "",
+      "lines": [
+        "Eu tô no jogo!",
+        "Meu Deus!",
+        "Eu tô no jogo!",
+        "Meu Deus!",
+        "Só percebi agora.",
+        "Mano, eu tô no jogo!",
+        "Pera, pera.",
+        "Eu também tô no jogo!",
+        "Pera aí.",
+        "Que porra é essa?",
+        "Eu também tô no jogo!",
+        "Mano, nós dois estamos no jogo!",
+        "Meu Deus!"
+      ]
+    },
+    {
+      "id": 5,
+      "start": 466,
+      "end": 485,
+      "edit": [
+        [
+          467.4,
+          481.45
+        ]
+      ],
+      "title": "",
+      "lines": [
+        "Tô me sentindo bem.",
+        "Eu também.",
+        "Tô me sentindo muito bem.",
+        "Quê, mano?",
+        "Você consegue falar inglês, mano?",
+        "Tô tentando, mano.",
+        "Tá tão feliz que nem consegue falar inglês?",
+        "Tenho que contar essa novidade pro meu pai."
+      ],
+      "layout": "reaction",
+      "reaction_crop": [
+        800,
+        510,
+        0,
+        570
+      ]
+    },
+    {
+      "id": 6,
+      "start": 671,
+      "end": 691,
+      "edit": [
+        [
+          672,
+          675.8
+        ],
+        [
+          679.15,
+          689.55
+        ]
+      ],
+      "title": "REAÇÃO À DATA DO TRAILER ORIGINAL",
+      "lines": [
+        "2026, porra?!",
+        "Achei que era 2025.",
+        "O que aconteceu?",
+        "Achei que era 2025.",
+        "Achei que ia sair este ano.",
+        "Mostraram tudo isso só pra botar 2026, mano."
+      ]
+    },
+    {
+      "id": 7,
+      "start": 882,
+      "end": 909,
+      "edit": [
+        [
+          883.1,
+          890.7
+        ],
+        [
+          892.75,
+          903.9
+        ]
+      ],
+      "title": "SPEED ESPECULA SOBRE A LUCIA",
+      "lines": [
+        "Chat, ela é brasileira, né?",
+        "Só pode ser brasileira.",
+        "Né?",
+        "Não sei.",
+        "Ela deve ser latina.",
+        "Não, ela é brasileira.",
+        "Lucia é nome brasileiro, mano.",
+        "Isso não quer dizer nada.",
+        "Chat, Lucia é nome brasileiro.",
+        "Ela é brasileira, chat.",
+        "É sim, mano.",
+        "Ela é do Brasil.",
+        "Eu sei, mano."
+      ]
+    }
+  ]
+}

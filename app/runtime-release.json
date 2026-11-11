@@ -1,0 +1,8 @@
+{
+  "tag": "b12110",
+  "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12110/llama-b12110-bin-win-cpu-x64.zip",
+  "model": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "model_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "model_expected_sha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "archive_sha256": "98901e327c252875accaf2d1bf364e10e868843b0b63468baad1aa945cdc5da2"
+}

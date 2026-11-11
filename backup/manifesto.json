@@ -1,0 +1,1434 @@
+{
+  "created_at": "2026-11-11T15:13:31.803137+00:00",
+  "format": 1,
+  "part_bytes": 20971520,
+  "archives": [
+    {
+      "name": "instalacao-e-lotes.zip",
+      "bytes": 45395813,
+      "sha256": "9488341e15734411481b4b8cc224d7b0edd971140ae0f5c0784b99ae0d6e7b82",
+      "parts": [
+        {
+          "name": "instalacao-e-lotes.zip.part001",
+          "bytes": 20971520,
+          "sha256": "d90a3548ff32cc3320329a8682c629a634dc1d9f8fd9e5e5454248de0ea89d8b"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.part002",
+          "bytes": 20971520,
+          "sha256": "712908aa86d01a6df03972a4c64a3034ebfb808d6aaf869de19f80a8ed439261"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.part003",
+          "bytes": 3452773,
+          "sha256": "195f6f8fd6d32a5abae23bd11c69176e9dc1f94dee52d745fbde9e6df33077db"
+        }
+      ],
+      "files": [
+        {
+          "path": "edicao-ia/cortes-app/README.md",
+          "bytes": 2111,
+          "sha256": "c3378812277e2955dfa75f2f9e4465d3a6f69618af5b7ef554ae48947a4201f8"
+        },
+        {
+          "path": "edicao-ia/cortes-app/app.py",
+          "bytes": 12093,
+          "sha256": "d7619ef66819819abc976d08112530d9e74c87feae1fe3f1dd73deffecaf5403"
+        },
+        {
+          "path": "edicao-ia/cortes-app/cortes.ico",
+          "bytes": 9817,
+          "sha256": "59e39e7f3c62e1d370a7b99c35822e517a2508b8574c6c2007c39ec5a20182ab"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/command-output.json",
+          "bytes": 11733,
+          "sha256": "5c7eeb16a99a9750ee9c138f3593767c76e6f9b0b264a3d64a0d3d7c8d6bee8e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/analise/cenas-5975c56765894bacb73f0853.json",
+          "bytes": 1547,
+          "sha256": "0fe669069e6c5327398fd9e47b5d91450a8f7185a19d996bc5359dfa372bfffc"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/analise/cenas-7cf0fcf813fc42fc7a26a6d1.json",
+          "bytes": 1213,
+          "sha256": "2c92d721484a11a79fa2ecbc2aeed275130f2864b799fd7ad17f32530f71c25a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/analise/fonte-02f8262bbbbfc9982dddf62d.json",
+          "bytes": 120,
+          "sha256": "5c26aec536a591a86b456195bb2812cc6547900d22d358aacab5f3f70d072a71"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/analise/fonte-51a9faa38a3e70a16aa8a0ad.json",
+          "bytes": 107,
+          "sha256": "50ccf8bade70c70c206169bede4cdd222f0f26e67e88b9ce10e1ef303ab2b985"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/analise/ultima-execucao.json",
+          "bytes": 563,
+          "sha256": "265f02bb153ec3cef85c59b9b6d93d6413dfe5287e7969bf780df43e69d9fba5"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/audio.json",
+          "bytes": 68210,
+          "sha256": "878858a82bcadb8a4763e911f85662ddfcbfe9ad40c063896f7bb37a5ebe3d15"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/audio.webm",
+          "bytes": 3271473,
+          "sha256": "be42b2c044b6e6f01e0c65e99ae2fdcc9490443308fd4fb051e6ea32d2dc6c8c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/auto-corte01-legendas.ass",
+          "bytes": 2257,
+          "sha256": "124bf9058de2cd7d8394d9acc34d9d3ddff857952f3e7b14a357222a289ecffd"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/auto-corte02-legendas.ass",
+          "bytes": 2131,
+          "sha256": "490ab14d5a3ebc1363bb44c82b02085ba3c43a23bf943031b81b5c64c20de370"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-0.jpg",
+          "bytes": 39363,
+          "sha256": "3f9190f62420ea710850456abad1770e15eda86bd0381c458e46df407182d68c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-1.jpg",
+          "bytes": 40756,
+          "sha256": "07f1845b981d7f3ee2ed53850388af3a121da127a2c9d92407cf4e73639a18b3"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-2.jpg",
+          "bytes": 45696,
+          "sha256": "846d3135e0fb8fcf0b16fea6f1a2cc32026cf8c7fa57a33814f60bab5e18f521"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-607e9061d8-0.jpg",
+          "bytes": 39657,
+          "sha256": "31705a301e45a450afc9d0941d38e278d92e5faa4b923e8c0e83f8f4c23c8562"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-607e9061d8-1.jpg",
+          "bytes": 39872,
+          "sha256": "86b6c1823dfdad7e951e9051a3d3b8a7c7411269ba33d079e033ac083cf945d2"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-607e9061d8-2.jpg",
+          "bytes": 46241,
+          "sha256": "1d3c472707321319bebb0a04fda2b2e62f9014b09a229c01d1bf56f49efb7bb9"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-9dd1cb48e3-0.jpg",
+          "bytes": 39258,
+          "sha256": "9732298549c4f10860f45983b585a7d1d5d2851a8d9632b3c33073682d48663c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-9dd1cb48e3-1.jpg",
+          "bytes": 42308,
+          "sha256": "c6c976483eadecbd9e481afea28e502cae04c6f626655e5c1c7d4bb652e26ec0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-9dd1cb48e3-2.jpg",
+          "bytes": 45923,
+          "sha256": "c0d6fada90e8b9adbc6b7cfa1619a5c3f1eece3776bfc706f42ed8644bb93896"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-ebf1e8c84d-0.jpg",
+          "bytes": 39244,
+          "sha256": "ba0523d198bf62703ec18d0ce87d66db3ece5533346b31a4ca3e99af54f547a1"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-ebf1e8c84d-1.jpg",
+          "bytes": 42339,
+          "sha256": "64a15a8db6adf81ba74b4b8160b5cb7ad9a60aef22dc9bfb0651b51f3807a790"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-1-ebf1e8c84d-2.jpg",
+          "bytes": 45923,
+          "sha256": "c0d6fada90e8b9adbc6b7cfa1619a5c3f1eece3776bfc706f42ed8644bb93896"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-0.jpg",
+          "bytes": 40932,
+          "sha256": "66fc1a7307c04054e246f4398d8e1efc3f1b0c5ed361278e7af55ebbc3308d6b"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-1.jpg",
+          "bytes": 51162,
+          "sha256": "c3e5560a3648f4387e4a7d600d574091d8e20c57dad6028055c9eac03ee8fe53"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-2.jpg",
+          "bytes": 36815,
+          "sha256": "6e5be0fac488cd830f35b0acc5e2c1a0e398c96080e5490817fe0871cadf53fc"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-22388c260c-0.jpg",
+          "bytes": 40809,
+          "sha256": "9ee25e716376d67b8650cf3ec9f863a473b72692d6e9483fe7af1083cb8c8c30"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-22388c260c-1.jpg",
+          "bytes": 48641,
+          "sha256": "1047245231bdaaee2cc953f804fbdb7e59aee9436d1c497555afc1069f35af33"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-22388c260c-2.jpg",
+          "bytes": 35759,
+          "sha256": "a50b07fb392116f9770d64cc327e4403d63358a566eecd96e5a55efad3945b8c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-35042d3d03-0.jpg",
+          "bytes": 41112,
+          "sha256": "a722a15cc6eeba524993819bf747f4b3a3afe490d97f8c405aaafa9357797990"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-35042d3d03-1.jpg",
+          "bytes": 49018,
+          "sha256": "bb8ed385185e25c7928e2f24b6e3a0fae000b5408e75681d3405154239ca5fc0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/cover-mlguGHEeVO0-2-35042d3d03-2.jpg",
+          "bytes": 36203,
+          "sha256": "19f92bea968901290518ef55f0bac1da78db6561f2bac4a583b168421cc84a03"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/enquadramento.py",
+          "bytes": 8865,
+          "sha256": "fce5f70b700481b2b4ce1d4bb8525f82415e8cb0debf7d75cfe8e873f3e7228b"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/executor.py",
+          "bytes": 9925,
+          "sha256": "d3dc56e264ef619003bbb651ad537644dc578b04d52f6b4ad3e360512e7cfee0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/fluxo.py",
+          "bytes": 9360,
+          "sha256": "b2b11f00515f208b34c2aae3a5bdb8e65be4b4f9abb10686be8d32da721a3169"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/fontes/1f1f70a5fd5ef7a0.mp4",
+          "bytes": 2709349,
+          "sha256": "02f8262bbbbfc9982dddf62dfc73c91e5cbffebaa846bf1b65b0bab75220dab9"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/fontes/36e79c64f4da888b.mp4",
+          "bytes": 4649097,
+          "sha256": "51a9faa38a3e70a16aa8a0ad77a91c3fcebd6fe03e6f2a4103280fa510c5f248"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/lote.json",
+          "bytes": 2709,
+          "sha256": "5a2f1ccaa77a37defc10fedd0ab21066040f2d8df3772d779a97aba5cde866e8"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/piloto-legendas.ass",
+          "bytes": 1494,
+          "sha256": "92802733dc706b4825ca7751bacfd68eceff116c4e03b9e5cdacf7726506f364"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/publicacao-1.json",
+          "bytes": 1550,
+          "sha256": "070bc86361cea9108d8e4f55e861ca1e9e457d5c416d9ebc7c598ada14a4f1b2"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/publicacao-2.json",
+          "bytes": 1454,
+          "sha256": "3e5659263d1138b5065120a647e4a5d61e8c47d42a1f1429d5f7b19299f9d6ec"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/revisao-automatica/auto-corte01.json",
+          "bytes": 2991,
+          "sha256": "cca2ca860f91d1f1bbad0c08609f1bb7f81d75b47923a23b478aadaba4809520"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/revisao-automatica/auto-corte01.mp4",
+          "bytes": 4999498,
+          "sha256": "9dd1cb48e36604b40c921d0bb0bb9f5954807822033eae2c0b8bb4cd4d5b330a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/revisao-automatica/auto-corte02.json",
+          "bytes": 3361,
+          "sha256": "13d7a67022da629a743d937f514a53d9f392ca4f7cc561ddb79d04db9ac56e3c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/revisao-automatica/auto-corte02.mp4",
+          "bytes": 3165245,
+          "sha256": "35042d3d0373e7fe93b6a2ef469bd3434ab9b0d4608d705ee91634d3483b6ffe"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/mlguGHEeVO0/selecao.py",
+          "bytes": 7102,
+          "sha256": "8d4873918f478bae8514feb7b1380800ad91d6544de70a942a4df723c9e87115"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/pacote-mlguGHEeVO0-1.zip",
+          "bytes": 5133704,
+          "sha256": "e5ecff796652b6ed069350183c2753748de821cc5cf78f5a9a0dc06679acd19e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/pacote-mlguGHEeVO0-2.zip",
+          "bytes": 3298264,
+          "sha256": "f768be25c721e1e3229ce036b590a504caa6ea3792df6cc5fea9332973528911"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/25e7a9146e16403c/pesquisa.json",
+          "bytes": 15938,
+          "sha256": "8af2872c6ea58cc730f6163de08962a476c57a3757f49a23d57db3576a4fcc29"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/cortes.db",
+          "bytes": 77824,
+          "sha256": "392b86b49f7b7cdf49b5c637e7ff45ea888352a43089b36a83c185df9f0f0027"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/analise/cenas-83905861f33cc6275d48e1a0.json",
+          "bytes": 1584,
+          "sha256": "a5684c8218d66b15fb76d727ca012b78c203ccadd6ea480e809e147fdb4c3954"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/analise/cenas-90a2cd0c7bd18fcecd1739a8.json",
+          "bytes": 833,
+          "sha256": "32ab4ab5138bdab8509e179d9df13e2e92176f913b4013ac81c454cc1712eb01"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/analise/fonte-bbf06ef80134bc6a4fe4b794.json",
+          "bytes": 105,
+          "sha256": "3f1033574ff73459137fde9e737171658e29aff357947914e741b30bedb32b1a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/analise/fonte-c0b3bcde560f611bdd56a578.json",
+          "bytes": 105,
+          "sha256": "0032cb2f227ad76ff1cf31ed261904d93271d41f3cd004fc4bdd84b5f1aa7cf9"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/analise/ultima-execucao.json",
+          "bytes": 564,
+          "sha256": "f74303c96224a7b12f7a47c8e74c5ca3ac22a7a7c8205287db921d1eb4fbcae0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/audio.json",
+          "bytes": 306143,
+          "sha256": "481f81474591c2a6550f8962e8cfbd77b640f2a99fa4892e4f58eebb8ffb2dfd"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/auto-corte08-legendas.ass",
+          "bytes": 1926,
+          "sha256": "98e2c5b9ac7b542eb49e7de28814222aa8a8b6ed4291c97d151b64a277950cb9"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/auto-corte09-legendas.ass",
+          "bytes": 1738,
+          "sha256": "d05211e4d389cd55d16563a2efe7d12db3b4676eabb43d98567bc90df5db5f2e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-8-0.jpg",
+          "bytes": 52597,
+          "sha256": "74dfe5d94c01d2dc21f777f569fe96b1e9bb7316a214702099a89cb7f4fbd796"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-8-1.jpg",
+          "bytes": 57707,
+          "sha256": "abbc1f8117e24610aa682a4c44525eb79afd9a77877fb8f9157fe15926a46397"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-8-2.jpg",
+          "bytes": 52948,
+          "sha256": "93bcd359686d7790af83c027dd428b6e7633b5eff64daa572ffe0517f69a87dd"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-8-eb4387e537-0.jpg",
+          "bytes": 52752,
+          "sha256": "a0dbfcc9e05661b9d96e069667a692f792516e989bb365f6e2d27cd5d21d8924"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-8-eb4387e537-1.jpg",
+          "bytes": 57881,
+          "sha256": "1966a02e5d4bbf977d7cde44de80dcbcc6961031e510c0acbaaf5ebf481cea1f"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-8-eb4387e537-2.jpg",
+          "bytes": 53094,
+          "sha256": "d0bd14b9c026948729227fd88642810e9561c02d9eb9faee3b81f75025411e9e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-0.jpg",
+          "bytes": 52182,
+          "sha256": "8594b309c57368f93621c86e4afae03f366110eb59fc4aef4fe11ed31a8ec2cb"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-1.jpg",
+          "bytes": 55064,
+          "sha256": "d2521d5c22d028024853d3913ac573fbc7b7946e52dc2f3eaf70418f17bfeffc"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-2.jpg",
+          "bytes": 58512,
+          "sha256": "57683e8a7b2055d68ce7f8108f8ba193860d5e4ed1333493458a99cf5b2cf752"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-318742d5cb-0.jpg",
+          "bytes": 51399,
+          "sha256": "49c0bd0989074e1a123370321d9cd8b057f9bce0bb21c8ec47178ded34aefdb2"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-318742d5cb-1.jpg",
+          "bytes": 54505,
+          "sha256": "974e1e975e01d300c8ca28b2479a16d6b56d57b537948af1e82f6dfd0c0809cf"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-318742d5cb-2.jpg",
+          "bytes": 58665,
+          "sha256": "fb594b260b104c6a1ab01bc4b7e4a5eb49f7b29e5aab34a060edb809a83eda0d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-4be98834a6-0.jpg",
+          "bytes": 51399,
+          "sha256": "49c0bd0989074e1a123370321d9cd8b057f9bce0bb21c8ec47178ded34aefdb2"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-4be98834a6-1.jpg",
+          "bytes": 55200,
+          "sha256": "d3eceb4a21ca53b2da89ac1431479ac3fc7c8d3a2b72bfbcd3f1b3144993ef0d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/cover-E07OTlhncP0-9-4be98834a6-2.jpg",
+          "bytes": 58654,
+          "sha256": "d6be6340b61cb2f8655edc17a56bc395fdf1fe040d35902a8742d459efacf56e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/enquadramento.py",
+          "bytes": 8865,
+          "sha256": "fce5f70b700481b2b4ce1d4bb8525f82415e8cb0debf7d75cfe8e873f3e7228b"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/executor.py",
+          "bytes": 9925,
+          "sha256": "d3dc56e264ef619003bbb651ad537644dc578b04d52f6b4ad3e360512e7cfee0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/fluxo.py",
+          "bytes": 9360,
+          "sha256": "b2b11f00515f208b34c2aae3a5bdb8e65be4b4f9abb10686be8d32da721a3169"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/lote.json",
+          "bytes": 3439,
+          "sha256": "4993fa18911f9501448eaaca1695e0627127572b7ad5116e6830ac80463d07ae"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/piloto-legendas.ass",
+          "bytes": 1494,
+          "sha256": "92802733dc706b4825ca7751bacfd68eceff116c4e03b9e5cdacf7726506f364"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/publicacao-8.json",
+          "bytes": 1366,
+          "sha256": "e76d6b36e369a208f25d34399a96cecefd615b63ee6b365e8b218584ff5efe0d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/publicacao-9.json",
+          "bytes": 1266,
+          "sha256": "c045faa2803a3f1351f80129fb8718cbb537d00e86794687dd2a004c207d0a47"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/revisao-automatica/auto-corte08.json",
+          "bytes": 2417,
+          "sha256": "5d057d0568664de4a03ae1943875a2669434c9f3d3ccf87d89ac292a55d79ed0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/revisao-automatica/auto-corte08.mp4",
+          "bytes": 2490924,
+          "sha256": "eb4387e537935fd0594e0b0c7f1ac192e392126aca2588f63e8751eb8ee34929"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/revisao-automatica/auto-corte09.json",
+          "bytes": 3313,
+          "sha256": "fca2f06962f3e4f5a6f5e0484e5c396a4e51c862570373eea17cd2ec4e855fc0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/revisao-automatica/auto-corte09.mp4",
+          "bytes": 3215744,
+          "sha256": "4be98834a6812b2490593dfbfda641064217efdcd6548dd367cf1c731ba35566"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/E07OTlhncP0/selecao.py",
+          "bytes": 7102,
+          "sha256": "8d4873918f478bae8514feb7b1380800ad91d6544de70a942a4df723c9e87115"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/command-output.json",
+          "bytes": 11733,
+          "sha256": "74231562c4cfac7e1027edb368a6bbde3a615b49bb10a06b4b2c6ce511b7b6f7"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/pacote-E07OTlhncP0-8.zip",
+          "bytes": 2661407,
+          "sha256": "e892ef670853911f923dfdacad3d896ad190173b560d34f0b7bf2ff4c2de3245"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/pacote-E07OTlhncP0-9.zip",
+          "bytes": 3387636,
+          "sha256": "f1341148a7e67c56595b187ee2fa0eb3648030d1252ef22473382bccbd0f2a7d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/e1eebdff846a446b/pesquisa.json",
+          "bytes": 15846,
+          "sha256": "8df9913cc706852c931458e6977bcd94f3e3559667af5c6c0ee7036fdf366424"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/EiQEBYDox_k/abertura.json",
+          "bytes": 309,
+          "sha256": "ac0f8904f4c0ad86a06e425ffad874bf134cb5d1e0c40dc3c89557a399c0e00a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/EiQEBYDox_k/fala.json",
+          "bytes": 46,
+          "sha256": "01185058be55a81ffa6cd6192b9c64a1009d52920343e88e63df581f12323880"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/EiQEBYDox_k/primeiros-20s.wav",
+          "bytes": 640078,
+          "sha256": "75ddbb737d9563c09925f2a5adec0651537c62499ad5d177ee48005c68f7b99f"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/EiQEBYDox_k/referencia.webm",
+          "bytes": 505128,
+          "sha256": "d8e9e2ba5d8140370f34ba3ac7352ee10808dbe02c671ef5f5f3aee21822413c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/o4szgbreAzs/abertura.json",
+          "bytes": 426,
+          "sha256": "bcfd0bd27d9f7c90d080276f7f06df53583edc471031b0c3462e5534b9ca5877"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/o4szgbreAzs/fala.json",
+          "bytes": 4920,
+          "sha256": "1a5cb143bd7ea0a5e0bb82629c956c754876002d12661c5dd7a58e7484f2e96a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/o4szgbreAzs/primeiros-20s.wav",
+          "bytes": 640078,
+          "sha256": "9d47f912a43e38b7168c4a4773c40a9a47501dc7522491ea032812a3decd5a2d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/o4szgbreAzs/referencia.webm",
+          "bytes": 863666,
+          "sha256": "c9efae0665cace7178454d567f84068eb6accfe4ac10c1412c99e7776c5682c0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/oO0BIXbOvQs/abertura.json",
+          "bytes": 507,
+          "sha256": "3cbe1c3dd52b8eb728f7090e8371711d6877322f8cf4b33183d2d7938e31ee7b"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/oO0BIXbOvQs/fala.json",
+          "bytes": 1406,
+          "sha256": "a9bda8702e2369c0edc2d151b173e2a792d2c9ba1bf1e99f72c196b1995ed557"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/oO0BIXbOvQs/primeiros-20s.wav",
+          "bytes": 640078,
+          "sha256": "289c5d74397f8bc2aecf794ee9ee5eda0d5a00b3b190974dcd34ab40818570f6"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/reference-cache/oO0BIXbOvQs/referencia.webm",
+          "bytes": 738707,
+          "sha256": "ddce2c1c637225a08904be31848d003a1868ba581204f0ca3fefde58a61403a6"
+        },
+        {
+          "path": "edicao-ia/cortes-app/data/ultima-geracao.json",
+          "bytes": 1727,
+          "sha256": "08ce38cbc0af0ca7b7091b8f5405f6254699242dbf2c63fbfbe6cf532344f785"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/index-CME_BZWZ.js",
+          "bytes": 246780,
+          "sha256": "966e02a9f0893acf7053b200f576a0515eeef393beba73466ad5e09011102464"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/index-b13e9wyx.css",
+          "bytes": 27736,
+          "sha256": "58c93103c20eda937639d8fc2670a71c9c767783c40adb383cf3667b60c5131d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-400-normal-HOLc17fK.woff",
+          "bytes": 9780,
+          "sha256": "6e441a6c94788318fa02b6d0a633aa29eebe27b69c6567eb1e59b4edc68ed70e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-400-normal-obahsSVq.woff2",
+          "bytes": 7712,
+          "sha256": "f0bb586459ce8f09b238285040f17e3e9e9538b2c5a7aae0775194e33c36c3c3"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-500-normal-BasfLYem.woff2",
+          "bytes": 7900,
+          "sha256": "b77a86ec16aadc157f4a99e8898d71cd75ea264753d9bdf13f962f8c3988cbb0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-500-normal-CxZf_p3X.woff",
+          "bytes": 9940,
+          "sha256": "5be18e0345781cb882a267798518553c0e915174fc70731ab5f085ca64ba1ebc"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-600-normal-4D_pXhcN.woff",
+          "bytes": 9936,
+          "sha256": "cc190ed1b64eb650a4ad7e97c7a668cb8b34acd9c4c7f7bf4372c0cbacd35795"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-600-normal-CWCymEST.woff2",
+          "bytes": 7972,
+          "sha256": "6c2a37f82a676bcd441b735e4e2cda4edb8873a059ab9c362a84f0711f257041"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-700-normal-CjBOestx.woff2",
+          "bytes": 7904,
+          "sha256": "5917871d3cc970d8ce195101cbf65c1f68ec948022eb6070030342bb7edfb3bb"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-700-normal-DrXBdSj3.woff",
+          "bytes": 9912,
+          "sha256": "72b6daa49173e531027d8a260ef128e142a165811cab6a2875eefe0c3c58fa0e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-400-normal-BQZuk6qB.woff2",
+          "bytes": 10232,
+          "sha256": "ef572f9187a8be018d9d9c2c6b77c1f6cb2af4199f02fc16c292ea10ab25a2cc"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-400-normal-DQukG94-.woff",
+          "bytes": 13336,
+          "sha256": "5cb2f1cc0936f89a42ceae34f5a5720248dc5b8114c12b1c33a7d2ef01a9b6b9"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-500-normal-B0yAr1jD.woff2",
+          "bytes": 10432,
+          "sha256": "1c2db92d3cd9b237ca7c9c07af556d542f28ded1db54cd4382cf776501c5291f"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-500-normal-BmqWE9Dz.woff",
+          "bytes": 13452,
+          "sha256": "e250c05aebcf49971e0b25f476992dd463c28c0292ebb204d9db542fb5066ca7"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-600-normal-Bcila6Z-.woff",
+          "bytes": 13464,
+          "sha256": "a5073285409443f4653c858de58c5dc0bfc2fd33e60d8747388345e7c5ab1ab3"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-600-normal-Dfes3d0z.woff2",
+          "bytes": 10484,
+          "sha256": "509fca9c59564f9a846fa69bc647f9b050fc11abf1c9f6f3da71fb2d5ed425bd"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-700-normal-BjwYoWNd.woff2",
+          "bytes": 10496,
+          "sha256": "a46b99781170971e2c99a87ff7ee9f5cf90a9dfcd18175e1be6300201d030123"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-cyrillic-ext-700-normal-LO58E6JB.woff",
+          "bytes": 13408,
+          "sha256": "0f3d4be2bd7018f78fa3484a5f6e9d8ce567689426643b84a47e8cabb91e5f16"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-400-normal-B4URO6DV.woff2",
+          "bytes": 7776,
+          "sha256": "c15ddd00a9927b56f5c655a41f976f79bd848a20cce91fc14227751872a1cc27"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-400-normal-q2sYcFCs.woff",
+          "bytes": 9924,
+          "sha256": "bdae9d28729e8c68587d5d54e216d771a40d7a6800e824586a6e2f570c2f10df"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-500-normal-BIZE56-Y.woff2",
+          "bytes": 7920,
+          "sha256": "cc197d79d33a3615a047baae85f4d1957f6f98b8898313658e160b1d519b1b6f"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-500-normal-Xzm54t5V.woff",
+          "bytes": 9980,
+          "sha256": "86d55a4b1b9cbced7e61e76d5d44cf49d0bd1c814d3df2de67b7136ab4fdcece"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-600-normal-BZpKdvQh.woff",
+          "bytes": 10032,
+          "sha256": "090b24e22fc4ddf41450d13bdec81c8a74808b9fc7edaf8df06c909b177a8992"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-600-normal-plRanbMR.woff2",
+          "bytes": 7944,
+          "sha256": "9c5a897f9d9fcfe60d90631d766ae62b4bf1edd76633fa7a4b2f8c87e036789b"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-700-normal-BUv2fZ6O.woff",
+          "bytes": 9980,
+          "sha256": "53368f53d5fc43381dcc45c8533ba2476f80337136313525f96dcbdc736616a5"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-700-normal-C3JjAnD8.woff2",
+          "bytes": 7920,
+          "sha256": "737c6c91cd60372d30e6540096ada83c89c9b4613cd7472e3366bf2e07ad99f1"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-400-normal-DGGRlc-M.woff2",
+          "bytes": 5264,
+          "sha256": "eadedd9e13c2582430a9fb1519eb86152fdabb483a6f66d90f8d8a52e977a1b7"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-400-normal-KugGGMne.woff",
+          "bytes": 7064,
+          "sha256": "4f2b6f92ddfece8812e79774d446218aa6e0773ff8c2d31130fe2bdc23bd22d0"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-500-normal-2j5mBUwD.woff",
+          "bytes": 7192,
+          "sha256": "c85d11bde719108cc9a4f6f5b008087f6c36493b47395580d4f5336182b0f0c7"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-500-normal-C4iEst2y.woff2",
+          "bytes": 5428,
+          "sha256": "75a9ec9383a3b7a7bf7cfb94f64edf38d9cfdc5f7ffa0cbed2733627a6e4426d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-600-normal-B8X0CLgF.woff",
+          "bytes": 7212,
+          "sha256": "efc7aa9cce5c505dd8cc4c4daf00247fa805f37bcda96079239ba3358ab27dfb"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-600-normal-DRtmH8MT.woff2",
+          "bytes": 5432,
+          "sha256": "399f94d75aa73403e40e2353e8c0cc75c38f7362a6ca263b3b02d9723157ffe5"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-700-normal-BoQ6DsYi.woff",
+          "bytes": 7216,
+          "sha256": "b26ed64c9135a750ad580b92152bedeef90771e74e18f6f7759a6d7adb0f1b5d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-greek-ext-700-normal-qfdV9bQt.woff2",
+          "bytes": 5444,
+          "sha256": "b7b2732ebc981b30a5463ffc850407649dba41e625aee124cc63293da4547629"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-400-normal-C38fXH4l.woff2",
+          "bytes": 23664,
+          "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-400-normal-CyCys3Eg.woff",
+          "bytes": 30696,
+          "sha256": "e20fa0b4fd2dd26e4d14b3ac3cc922509c3a63fa5e910e90c614544aa042dd45"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-500-normal-BL9OpVg8.woff",
+          "bytes": 31284,
+          "sha256": "9b42c108da48b5ed55a3072e815ffee2d271562e6c0dd6998910e8f9c09e0a3d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-500-normal-Cerq10X2.woff2",
+          "bytes": 24272,
+          "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-600-normal-CiBQ2DWP.woff",
+          "bytes": 31260,
+          "sha256": "6a9cb3a509b4eeaf12b7dda6c4aacac3e85d07f4201bf4dd716e332e692b87bd"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-600-normal-LgqL8muc.woff2",
+          "bytes": 24452,
+          "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-700-normal-BLAVimhd.woff",
+          "bytes": 31320,
+          "sha256": "7c5ed5655730de337704d3fc94628515cd7e3d8d32368871709bf56ac0397e7a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-700-normal-Yt3aPRUw.woff2",
+          "bytes": 24356,
+          "sha256": "6f56409fd3d64bb85f7d070bce20749db2d66b6d63cec586cc22d1c761be2491"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-400-normal-77YHD8bZ.woff",
+          "bytes": 47560,
+          "sha256": "22ae8360fbad24d2af7c6c9898a346c881774dc87f7cf94bd262c48ad58d7116"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-400-normal-C1nco2VV.woff2",
+          "bytes": 35000,
+          "sha256": "6744a7f509ebc6ab220a6cd4ea77e898adf014f03d88dcda5d45d8a9feefb4e9"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-500-normal-BxGbmqWO.woff",
+          "bytes": 48492,
+          "sha256": "30d2903ce97f8a89ea0e9c083b42cb8bf97e7bbb5607e7f00352815f19cb0d5b"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-500-normal-CV4jyFjo.woff2",
+          "bytes": 36024,
+          "sha256": "2c6fbc42d315528beb06c1096df45487bf4186c4b78b8111d12c9c951f8acca2"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-600-normal-CIVaiw4L.woff",
+          "bytes": 48668,
+          "sha256": "22ff20a6170674fb9637c2a072227be86303bb6ec52b829b9d7077405f7196a6"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-600-normal-D2bJ5OIk.woff2",
+          "bytes": 36260,
+          "sha256": "e4bdf67b0cd15ca9e184509275be95db942195d3cc2b17f6a0452f2adf75d0bf"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-700-normal-Ca8adRJv.woff2",
+          "bytes": 36244,
+          "sha256": "143f9504f1377012aa3e39c90c4354ef429cb0494b9ac0e1437f1a81e5412236"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-latin-ext-700-normal-TidjK2hL.woff",
+          "bytes": 48632,
+          "sha256": "1761edba32014180deab3dbbe3f7156c64ef6f34bc76313ba31ce227fc9ff391"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-400-normal-Bbgyi5SW.woff",
+          "bytes": 6500,
+          "sha256": "54aa42d325bcdfd623ecb9eac4a5e3c6420c63d7b86e9d8545fb479f653beb57"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-400-normal-DMkecbls.woff2",
+          "bytes": 4972,
+          "sha256": "547ad9fdaeb0ae43487f4b8a02e47c36553c0c0cb73c8aa98f93b7b615f6b55d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-500-normal-DOriooB6.woff2",
+          "bytes": 5112,
+          "sha256": "44e36aa5a8f12130029a29bb0e6695d0262b67446ce321e878b1fb56162b5de6"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-500-normal-mJboJaSs.woff",
+          "bytes": 6596,
+          "sha256": "18a4a09f751671cd8929d7c66e8fe7d820b511c36e51cf6047ffceab88eec4a4"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-600-normal-BuLX-rYi.woff",
+          "bytes": 6640,
+          "sha256": "24a01e7bd947aeef91ae8f7b8edeb23fadaf5ceda34a610ce62d2bbdaea57e83"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-600-normal-Cc8MFFhd.woff2",
+          "bytes": 5100,
+          "sha256": "1aeb94ae9db052a4a2fe6f3046f928cff1fdbd7abdf870a9a01c13cae6faeba5"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-700-normal-BZaoP0fm.woff",
+          "bytes": 6632,
+          "sha256": "412023ab2f41333b373e2c6eb2a3ebab806fddd610015d2ae8cd4f4314c7ba92"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/assets/inter-vietnamese-700-normal-DlLaEgI2.woff2",
+          "bytes": 5104,
+          "sha256": "5fafa3829a16d9ea5ac3a67c51e54186353122790b604a3e361f96cab188da8b"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/dist/index.html",
+          "bytes": 449,
+          "sha256": "66d301f8a5c4ba0b1165af57762e18eecf0750a1f1cb4b3d29b7213780fe653d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/index.html",
+          "bytes": 351,
+          "sha256": "3dcaa0d77877641c7c3112dbce79248d7d08a55d8363a7fc1dacbaebdcbbda0f"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/package-lock.json",
+          "bytes": 37224,
+          "sha256": "b0cfd0b847de7aad031892474e29202428db6c03c6c1ddc03fed90fa0656603a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/package.json",
+          "bytes": 364,
+          "sha256": "2d02bd29b67584a0c06f55234540f978dd9b6e3f261282e7986ea8e63cb01030"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/src/main.jsx",
+          "bytes": 36046,
+          "sha256": "ab11f7fc3cbd2ffd7ffdc74caafa1b09a975201d03db9f110536c7d665bc50b5"
+        },
+        {
+          "path": "edicao-ia/cortes-app/frontend/src/style.css",
+          "bytes": 23477,
+          "sha256": "b397e09332cc3b98b18cddcc9729ac806c6099ad2ce33b495d34b546b884dede"
+        },
+        {
+          "path": "edicao-ia/cortes-app/iniciar.cmd",
+          "bytes": 84,
+          "sha256": "d66395057852aa15226819d06dd2f7e273b84d9163904b3622c4dd180398221a"
+        },
+        {
+          "path": "edicao-ia/cortes-app/iniciar.pyw",
+          "bytes": 1062,
+          "sha256": "028a9616a2bf4c606e38d7c6fcbd5a153471df2f9ba865e9f2a651ac5e732944"
+        },
+        {
+          "path": "edicao-ia/cortes-app/local_text.py",
+          "bytes": 5581,
+          "sha256": "6dc73a03f9e1894ff00d28964099036d895e30501f46606bd580b419a072077c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/pipeline.py",
+          "bytes": 17526,
+          "sha256": "7c795de1396ffe01f9d5af4e996979a0a2dd3608c866d4722037af7528b95bc8"
+        },
+        {
+          "path": "edicao-ia/cortes-app/reference_analysis.py",
+          "bytes": 3659,
+          "sha256": "e0ca059b29a1a5dd32038852866bb375d38e70e2eca36e34105163a082baacb6"
+        },
+        {
+          "path": "edicao-ia/cortes-app/research.py",
+          "bytes": 6266,
+          "sha256": "07ddf63f00be4540b247031f6834ed2a360a2679ba0aa153328ef60abba364a7"
+        },
+        {
+          "path": "edicao-ia/cortes-app/runtime-release.json",
+          "bytes": 453,
+          "sha256": "f0a4bdac25cdbb73ce78adb725ec565d961d5a0d5092624eaaffcd2a554db2ff"
+        },
+        {
+          "path": "edicao-ia/cortes-app/storage.py",
+          "bytes": 2840,
+          "sha256": "1b99fca7e0d63911becc5de8de7fc9b73797e1ce3f481dd954a229847b05a4bd"
+        },
+        {
+          "path": "edicao-ia/cortes-app/tools.json",
+          "bytes": 471,
+          "sha256": "28ffa0d3a0fc6707fd5888133cc08bdd0e144caf056e4ff4d4c12c69cf240ade"
+        },
+        {
+          "path": "edicao-ia/cortes-app/transcribe.py",
+          "bytes": 709,
+          "sha256": "8ddef90d761220795fe2aa5b087070e36e85d7d27b85cc647d5f55503a8de1b0"
+        }
+      ]
+    },
+    {
+      "name": "piloto-e-motor.zip",
+      "bytes": 97678666,
+      "sha256": "7e17503c95e5489a2f263deeaa8521cffb35a9bb19ac5914ee453304af9db19f",
+      "parts": [
+        {
+          "name": "piloto-e-motor.zip.part001",
+          "bytes": 20971520,
+          "sha256": "b53126497e77d027247b0070cf884f192ab5b256d426ffe3e99ee56026115433"
+        },
+        {
+          "name": "piloto-e-motor.zip.part002",
+          "bytes": 20971520,
+          "sha256": "6e8c28a6c3adec16ae1abdb69f0bf0e6f5cdac74611417d09eebe26a53e8734f"
+        },
+        {
+          "name": "piloto-e-motor.zip.part003",
+          "bytes": 20971520,
+          "sha256": "e98922ea76d2d8e6f573598fb01c35b269be3f11a17409392377609ece064287"
+        },
+        {
+          "name": "piloto-e-motor.zip.part004",
+          "bytes": 20971520,
+          "sha256": "d6197faf219ae3bdf8e24603274ff60c5881445e4c32b2ae0b4bba8facad18eb"
+        },
+        {
+          "name": "piloto-e-motor.zip.part005",
+          "bytes": 13792586,
+          "sha256": "bc8784d9774c188d41ed07dfc0398d57c30ce9978e7846619ec5ba3c4fe8b700"
+        }
+      ],
+      "files": [
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/COMO-EXECUTAR.md",
+          "bytes": 4354,
+          "sha256": "6ed2a081567bf60b39646ca8c7d2b9d31bd62e7c0cad286f0d318ed14be87bdc"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/CONTINUAR-CORTES-CODEX.md",
+          "bytes": 10360,
+          "sha256": "dfa7b43c04f5b366f2b09cb537f4f7a67884ece864935b6eeb169a3e54cf429d"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-0f0097d172ec8788c6ead756.json",
+          "bytes": 1524,
+          "sha256": "3373be2739ed56ebe1fbf611984d5b6c49cd600f06ebf706400840eee708f07a"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-228bc020829a87f8a0eae0d5.json",
+          "bytes": 833,
+          "sha256": "611a8bb6ff21cb62dee6b6203d26d4e02c14bb90882238efc6b57ab3ae52ad3d"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-47530820968893dd4bcb63bb.json",
+          "bytes": 1203,
+          "sha256": "ada502ecf3c40287a30be95d8e224b1cef2d9577b616ecf287983eb5d611fb83"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-6c935ea3afecc43371056546.json",
+          "bytes": 1562,
+          "sha256": "b624e42dd1f9d2d7262f50308ff6a2df4bbe514851bbe517ee54df9b9267b6bd"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-83905861f33cc6275d48e1a0.json",
+          "bytes": 1584,
+          "sha256": "ab9e197998c281e6e0618b9d154f5aa37cbb04d8e49ff9a1b302c0addc0ad1ae"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-90a2cd0c7bd18fcecd1739a8.json",
+          "bytes": 833,
+          "sha256": "5b9678f1381fa94cc1fc9716cb30140edfd6cdc41d65c8564e2d6b55b16f64ec"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-a2496774a79728313a5c927d.json",
+          "bytes": 1555,
+          "sha256": "9c60c3bf150b62e24d31ddab09a027d8184ed3a4cee8e5e530e168cbaa4e2770"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/cenas-a77ec499862e36e056aeabd2.json",
+          "bytes": 1585,
+          "sha256": "cf6fd2ab2e5392b070656c692d7e60d49846ef30d31c16c7e3bd7abea207b8ee"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/fonte-bbf06ef80134bc6a4fe4b794.json",
+          "bytes": 105,
+          "sha256": "3f1033574ff73459137fde9e737171658e29aff357947914e741b30bedb32b1a"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/fonte-c0b3bcde560f611bdd56a578.json",
+          "bytes": 105,
+          "sha256": "0032cb2f227ad76ff1cf31ed261904d93271d41f3cd004fc4bdd84b5f1aa7cf9"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/lote-automatico.json",
+          "bytes": 12935,
+          "sha256": "e8a788a947e550a22dabeea1600dc863f237d6567b83f15e3faa1ef157f91020"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/testes-enquadramento/auto-corte02.json",
+          "bytes": 2938,
+          "sha256": "322bcb05fa5bdf11b0f8f940cacf7e6c700515bc5f46246b16303ddb658ffabb"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/testes-enquadramento/auto-corte02.mp4",
+          "bytes": 3081272,
+          "sha256": "c0d5f71db2d31b161ebd4a7d75f7554a96cea3834c9470018e5359512cdf7937"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/testes-enquadramento/auto-corte04.json",
+          "bytes": 2336,
+          "sha256": "7c98f80fea2a0cf199d21e2013996b6730230cb872bed155d39951df9cbb539e"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/testes-enquadramento/auto-corte04.mp4",
+          "bytes": 2282840,
+          "sha256": "54500e3b8a0aa58cbe558860a826351210711e0a5ba4883d464113b1c24b376e"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/testes-enquadramento/auto-corte07.json",
+          "bytes": 2810,
+          "sha256": "ab9011c233882ce934d2c4127897db15331da1d1dba92aa977520ea45764636d"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/testes-enquadramento/auto-corte07.mp4",
+          "bytes": 3742878,
+          "sha256": "e16cd15b3983e7c1962b5f280c5806188ac38cac722fdfb79821f9661c81219a"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/analise/ultima-execucao.json",
+          "bytes": 565,
+          "sha256": "426881e0438e36ef8593d68bf0d97e9adc8c4cf84dc682f5231c911455d490cf"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/audio.json",
+          "bytes": 306143,
+          "sha256": "481f81474591c2a6550f8962e8cfbd77b640f2a99fa4892e4f58eebb8ffb2dfd"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/audio.m4a",
+          "bytes": 15478832,
+          "sha256": "ddbce6416e95e2d2f1805f44e1c9f8cc18538b4ebb8b82f7f3f88adf2b5dcdb5"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/auto-corte02-legendas.ass",
+          "bytes": 2105,
+          "sha256": "ad24d3a55abe1fffa22dde86e1d1b741ae03789c026aef1ca104e2b93f832b87"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/auto-corte04-legendas.ass",
+          "bytes": 1658,
+          "sha256": "4deeddb751aaf0854840fd904818d1e310cde1f30702c95e188989f84a6a1082"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/auto-corte07-legendas.ass",
+          "bytes": 1811,
+          "sha256": "2a73b110ccbceeb6095a077de3096836bc23f8a6597296203b96d5351c6e0c6e"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/auto-corte08-legendas.ass",
+          "bytes": 1933,
+          "sha256": "c333b29e939d4a42b3da1f960e2bf20727d3fa1e7c5e3aa79110e65667f84f6b"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/auto-corte09-legendas.ass",
+          "bytes": 1794,
+          "sha256": "9951b3f4bfbde59b314b68d1ab9b5dfd32452706ebaa66128d5045c36a9b1a28"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/automacao.json",
+          "bytes": 308,
+          "sha256": "0eca5221303c73d15ade9807f32e2b57eb9fd5906a80721b8ddf4d9394489878"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte02-fonte.mp4",
+          "bytes": 2710951,
+          "sha256": "bbf06ef80134bc6a4fe4b794cb1fe88f68c88ccdd761ca1752b4ce7bed58f232"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte02-legendas.ass",
+          "bytes": 2105,
+          "sha256": "ad24d3a55abe1fffa22dde86e1d1b741ae03789c026aef1ca104e2b93f832b87"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte03-fonte.mp4",
+          "bytes": 3470306,
+          "sha256": "3e2d2f2d1c55e73ff313554a6dcdbc76bc5a289cbe0aa093584ee6ff51126fc2"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte03-legendas.ass",
+          "bytes": 1274,
+          "sha256": "db5de17e5213aabc2ead0c546dea85c7696e3f098773453057f16c2af39c0f23"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte04-fonte.mp4",
+          "bytes": 2496906,
+          "sha256": "321278d4cfdbaab318b57120b57d397008fe13882ddedf44583c1a7ad551f49c"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte04-legendas.ass",
+          "bytes": 1658,
+          "sha256": "4deeddb751aaf0854840fd904818d1e310cde1f30702c95e188989f84a6a1082"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte05-fonte.mp4",
+          "bytes": 1667483,
+          "sha256": "de8ef72e7e47d4bba816f813b8efbcfe06d49a026433e20d01c6a61b5b74bf59"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte05-legendas.ass",
+          "bytes": 1307,
+          "sha256": "4b740d3149c79229305a405d9449da1d65b7fdc3f0e8c463d4b3b86c3e132d94"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte06-fonte.mp4",
+          "bytes": 1429243,
+          "sha256": "5b53b5e500ef6d7b6e0870cd17098646f8e48d3d7a16b23c71c6b48d757c9a43"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte06-legendas.ass",
+          "bytes": 1203,
+          "sha256": "5d264e724b59f4a622d237df4194bd70901b7867f02954e04f6b32f1e7e6e5e6"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte07-fonte.mp4",
+          "bytes": 4383404,
+          "sha256": "1ef3898850c45ffd5963fa82283bd2dd2097ad4522d9d51b49160575874a0175"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/corte07-legendas.ass",
+          "bytes": 1811,
+          "sha256": "2a73b110ccbceeb6095a077de3096836bc23f8a6597296203b96d5351c6e0c6e"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/enquadramento.py",
+          "bytes": 8865,
+          "sha256": "fce5f70b700481b2b4ce1d4bb8525f82415e8cb0debf7d75cfe8e873f3e7228b"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/executar-automatico.cmd",
+          "bytes": 143,
+          "sha256": "dfb68ee6a24cd2a8aeefea67ea3f89579fd4876fd2dc3edbd7af10842acc1102"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/executar.cmd",
+          "bytes": 120,
+          "sha256": "7cbaa5d52e2958bb62cb83ee8359dda24cc6a5befabd048114418d585d0f256b"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/executor.py",
+          "bytes": 9925,
+          "sha256": "d3dc56e264ef619003bbb651ad537644dc578b04d52f6b4ad3e360512e7cfee0"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/fluxo.py",
+          "bytes": 9360,
+          "sha256": "b2b11f00515f208b34c2aae3a5bdb8e65be4b4f9abb10686be8d32da721a3169"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/fontes/3c5a1ca5d8fce249.mp4",
+          "bytes": 2710951,
+          "sha256": "bbf06ef80134bc6a4fe4b794cb1fe88f68c88ccdd761ca1752b4ce7bed58f232"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/fontes/57f5755dd1efb59d.mp4",
+          "bytes": 3470306,
+          "sha256": "3e2d2f2d1c55e73ff313554a6dcdbc76bc5a289cbe0aa093584ee6ff51126fc2"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/fontes/90031d180c11122c.mp4",
+          "bytes": 1429243,
+          "sha256": "5b53b5e500ef6d7b6e0870cd17098646f8e48d3d7a16b23c71c6b48d757c9a43"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/fontes/a7c6b7b27009b0ba.mp4",
+          "bytes": 1667483,
+          "sha256": "de8ef72e7e47d4bba816f813b8efbcfe06d49a026433e20d01c6a61b5b74bf59"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/fontes/dfdf379735e8355d.mp4",
+          "bytes": 4383404,
+          "sha256": "1ef3898850c45ffd5963fa82283bd2dd2097ad4522d9d51b49160575874a0175"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/fontes/eef421cf4a2b5483.mp4",
+          "bytes": 2496906,
+          "sha256": "321278d4cfdbaab318b57120b57d397008fe13882ddedf44583c1a7ad551f49c"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/lote.json",
+          "bytes": 3953,
+          "sha256": "bca0feeb9b35d777c4780058085f56840d9162729ddee48ef8fcbc1c31e1b74f"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/piloto-editado-v1.mp4",
+          "bytes": 3428060,
+          "sha256": "a295d180d84c4802fdec27e8db0d27ae0891c57bf777a771c2e24e54f92d860a"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/piloto-enquadramento.mp4",
+          "bytes": 6004176,
+          "sha256": "449db4e33baf3bd85f689a2efe0733557d1b8b1c23323ae532779225e7170109"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/piloto-fonte.mp4",
+          "bytes": 12282071,
+          "sha256": "c0b3bcde560f611bdd56a57866059bb57de1f0ed35a4b07ccac7e254ef87dd52"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/piloto-legendas.ass",
+          "bytes": 1494,
+          "sha256": "92802733dc706b4825ca7751bacfd68eceff116c4e03b9e5cdacf7726506f364"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao-automatica/auto-corte08.json",
+          "bytes": 2411,
+          "sha256": "e0e42e0aa471536f80361484c373284ee67b7064462e94db2321445c3fb9c599"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao-automatica/auto-corte08.mp4",
+          "bytes": 2494234,
+          "sha256": "8520ee8e500c040eeca14b65aea7b1d8ccd9ee9cfc036ba2a73196bb6e1922c4"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao-automatica/auto-corte09.json",
+          "bytes": 3362,
+          "sha256": "3f67e7b330fa43723967891ab264f182f45f737c54ceb10ed2f65607cd984960"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao-automatica/auto-corte09.mp4",
+          "bytes": 3273485,
+          "sha256": "abc66ca209bda3633176a84e7c919ff60dd51717eb846dc0f078b31281c66d70"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte02.json",
+          "bytes": 1185,
+          "sha256": "b8317e06d346c814bd7aabf94a302a55fff8414d14871b6b823d8e2e1dba629b"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte02.mp4",
+          "bytes": 3170788,
+          "sha256": "24433c977d44955c4271e06f534e4b61bf3880767bfb770102aba8fbb0638663"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte03.json",
+          "bytes": 859,
+          "sha256": "ecc04bbe5c384c243f2c7465b304dd13f5fe73c8b90a72c22975ba981f5eefa0"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte03.mp4",
+          "bytes": 1882580,
+          "sha256": "5ccaf6e3e61c626462c6009d4c08e29847e2d1a5f588daf47d218b0a2eeb009f"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte04.json",
+          "bytes": 999,
+          "sha256": "a77ee6c0f685ad896f6668f0158b59d7225fd0add4be3adde6d0828b0f70379e"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte04.mp4",
+          "bytes": 2282840,
+          "sha256": "54500e3b8a0aa58cbe558860a826351210711e0a5ba4883d464113b1c24b376e"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte05.json",
+          "bytes": 996,
+          "sha256": "53b2cf94f9909e52278bee4b10b035204d9f4d8ace91c0cba1674e60eed2354f"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte05.mp4",
+          "bytes": 1466093,
+          "sha256": "7a1985776bd1c11f3cd566e8c2ebfc8cfaa814c8aa3fff576b7ac832eadfee2d"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte06.json",
+          "bytes": 883,
+          "sha256": "c279777b0a010fb1027274e2862c91738e0f6da1b527ac4121f1df8999d3ebed"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte06.mp4",
+          "bytes": 1461394,
+          "sha256": "510c97ae59eb0daab63895090f5a171f6f147bd989956a4544656ec167fa9d97"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte07.json",
+          "bytes": 1079,
+          "sha256": "3526ef85e78a627fd1ac09ee0a8f9949ef07e18029ebc556d37dcf7ce4ac8e18"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/revisao/corte07.mp4",
+          "bytes": 3742878,
+          "sha256": "e16cd15b3983e7c1962b5f280c5806188ac38cac722fdfb79821f9661c81219a"
+        },
+        {
+          "path": "cortes-trabalho/001-E07OTlhncP0/selecao.py",
+          "bytes": 7102,
+          "sha256": "8d4873918f478bae8514feb7b1380800ad91d6544de70a942a4df723c9e87115"
+        }
+      ]
+    },
+    {
+      "name": "modelos-ativos.zip",
+      "bytes": 200827611,
+      "sha256": "3686c0caf3ad04cc867ddd5c8e52c56fc5d0fdbc014ad92b5dd522d79ce7dc01",
+      "parts": [
+        {
+          "name": "modelos-ativos.zip.part001",
+          "bytes": 20971520,
+          "sha256": "11ec9b40e4ffb87c36936989a71330a4e711ab7e03ff285f2033b329f6f86138"
+        },
+        {
+          "name": "modelos-ativos.zip.part002",
+          "bytes": 20971520,
+          "sha256": "1ae74ba860953b587fd016f474d85d75dddce88fe046920ecaf4e0ad86a7b958"
+        },
+        {
+          "name": "modelos-ativos.zip.part003",
+          "bytes": 20971520,
+          "sha256": "05cda8b016d2d4dc8cfd252369941acef992f548842b169de697f85043f680f1"
+        },
+        {
+          "name": "modelos-ativos.zip.part004",
+          "bytes": 20971520,
+          "sha256": "c10fba456a9e419d60470b961544a97855404143a708c9c390e0b551e36645f6"
+        },
+        {
+          "name": "modelos-ativos.zip.part005",
+          "bytes": 20971520,
+          "sha256": "66a830b61175b7debcbf83fc42830637207cc14e7453283e52a149e75c28bc37"
+        },
+        {
+          "name": "modelos-ativos.zip.part006",
+          "bytes": 20971520,
+          "sha256": "67e353750056d280e262f89d7781f0ba796107349b919180d10dacc13e4161de"
+        },
+        {
+          "name": "modelos-ativos.zip.part007",
+          "bytes": 20971520,
+          "sha256": "828f72b89340b6284e94b7434fd88da192a3e3152d84549a69cf8da39bc831ab"
+        },
+        {
+          "name": "modelos-ativos.zip.part008",
+          "bytes": 20971520,
+          "sha256": "eb4cdc56077fd0cb45ae401089cc0c5f16743247e5261f071e9996287f7a6ae1"
+        },
+        {
+          "name": "modelos-ativos.zip.part009",
+          "bytes": 20971520,
+          "sha256": "bda62e48ef2d9c732d7ba2a7d4040749d6104bea56455634e80c8e393f3bc8e7"
+        },
+        {
+          "name": "modelos-ativos.zip.part010",
+          "bytes": 12083931,
+          "sha256": "c0f6b32025d2942a0333cbf6162650a8cb6174330a9a62cabea730141be16b7e"
+        }
+      ],
+      "files": [
+        {
+          "path": ".cache/whisper/base.pt",
+          "bytes": 145262807,
+          "sha256": "ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/README.md",
+          "bytes": 404,
+          "sha256": "0005c86fddf2f82ae44cb6a793ffc4ec43f1498079ab4172ad575945b1b8a146"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/metadata.json",
+          "bytes": 136,
+          "sha256": "329352766986eb1cd03617f099293a587c24d37f13abca854c7693a73f4168b7"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/model/config.json",
+          "bytes": 248,
+          "sha256": "ed00cd78632a7309dc8c8944bd95cfb07b3a0595d4bcc4dd1725c49c7ba3008c"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/model/model.bin",
+          "bytes": 80298997,
+          "sha256": "a68dd89c9d226e09cef948a01ded22bede8858326af89644f1b715efe39e7018"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/model/shared_vocabulary.json",
+          "bytes": 1128373,
+          "sha256": "889fd971922b90b1c33cb1af1596f873820c04e6ad0277248ac84e86966a8b2d"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/sentencepiece.model",
+          "bytes": 777548,
+          "sha256": "7072c1746f72ca1335eadba63288f7fd938f6107ee1f83494babdae3bba47192"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/stanza/en/tokenize/ewt.pt",
+          "bytes": 630886,
+          "sha256": "7bc5a1523f4e60107640ea44d2cb27c787bc339ba0c93be6c7dbf744d5635cd6"
+        },
+        {
+          "path": "edicao-ia/cortes-app/models/argos/translate-en_pt-1_9/stanza/resources.json",
+          "bytes": 121862,
+          "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+        },
+        {
+          "path": "edicao-ia/face.tflite",
+          "bytes": 229746,
+          "sha256": "b4578f35940bf5a1a655214a1cce5cab13eba73c1297cd78e1a04c2380b0152f"
+        },
+        {
+          "path": "edicao-ia/person.tflite",
+          "bytes": 249537,
+          "sha256": "191ac9529ae506ee0beefa6b2c945a172dab9d07d1e802a290a4e4038226658b"
+        }
+      ]
+    }
+  ]
+}

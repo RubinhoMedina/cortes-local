@@ -1,0 +1,17 @@
+# Segredos e estado local não devem entrar em novos commits.
+.env
+.env.*
+!.env.example
+**/private/
+**/*api-key*
+**/*token*.xml
+**/.venv/
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+app/data/
+app/models/
+app/runtime/
+app/tools.json
+app/frontend/dist/
+restauracao-cortes-local/
