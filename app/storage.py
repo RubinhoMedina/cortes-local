@@ -2,14 +2,15 @@
 
 from datetime import datetime, timezone
 import json
+import os
 from pathlib import Path
 import sqlite3
 import threading
 import uuid
 
 ROOT = Path(__file__).resolve().parent
-DATA = ROOT / "data"
-DATA.mkdir(exist_ok=True)
+DATA = Path(os.environ.get('CORTES_DATA_DIR', str(ROOT / 'data'))).resolve()
+DATA.mkdir(parents=True, exist_ok=True)
 LOCK = threading.RLock()
 
 

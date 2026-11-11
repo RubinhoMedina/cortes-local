@@ -16,6 +16,7 @@ import local_text
 import research
 import reference_analysis
 import storage
+import process_lifetime
 
 ROOT = Path(__file__).resolve().parent
 PYTHON = ROOT.parent / ".venv/Scripts/python.exe"
@@ -76,9 +77,16 @@ class Pipeline:
         started = time.monotonic()
         with output.open("wb" if capture else "ab") as log:
             with (directory / "diagnostico.log").open("ab") as errors:
+                error_offset = errors.tell()
                 process = subprocess.Popen([str(value) for value in command], cwd=directory,
                                            stdout=log, stderr=errors,
-                                           creationflags=subprocess.CREATE_NO_WINDOW)
+                                           creationflags=subprocess.CREATE_NO_WINDOW | subprocess.BELOW_NORMAL_PRIORITY_CLASS)
+                try:
+                    group = process_lifetime.own_command_children(process)
+                except Exception:
+                    process.kill()
+                    process.wait()
+                    raise
                 try:
                     while process.poll() is None:
                         self.check(identifier)
@@ -86,14 +94,24 @@ class Pipeline:
                             raise RuntimeError(f"Tempo excedido em {Path(str(command[0])).name}")
                         time.sleep(.4)
                     if process.returncode:
-                        raise RuntimeError(f"Falha em {Path(str(command[0])).name}. Consulte o diagnóstico do lote.")
+                        errors.flush()
+                        diagnostic_path = directory / 'diagnostico.log'
+                        with diagnostic_path.open('rb') as details:
+                            details.seek(max(error_offset, diagnostic_path.stat().st_size-5000))
+                            stderr = details.read().decode('utf8',errors='replace')
+                        error = RuntimeError(f"Falha em {Path(str(command[0])).name}. Consulte o diagnóstico do lote.")
+                        error.stderr = stderr
+                        raise error
                 except BaseException:
+                    group.close()
                     subprocess.run(["taskkill", "/PID", str(process.pid), "/T", "/F"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, creationflags=subprocess.CREATE_NO_WINDOW)
                     try:
                         process.wait(timeout=8)
                     except subprocess.TimeoutExpired:
                         process.kill()
                     raise
+                finally:
+                    group.close()
         return output.read_text(encoding="utf-8-sig") if capture else None
 
     def worker(self):

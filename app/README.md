@@ -1,5 +1,7 @@
 # Cortes Local — aplicação interna
 
+**Versão 2:** leia `LOTES-GRANDES.md`. O servidor usa `batch.py` para controlar uma meta, pesquisa incremental, deduplicação, pausa, repetição limitada e recuperação automática. `planning.py` interpreta tema/quantidade e fornece o plano mostrado na tela. `process_lifetime.py` encerra processos de mídia junto com seu controlador. `pipeline.py` mantém os auxiliares de transcrição, execução e mídia.
+
 Inicie por `iniciar.cmd` ou pelo atalho **Cortes Local** na área de trabalho. Para diagnóstico em primeiro plano: `C:\Users\Windows\edicao-ia\.venv\Scripts\python.exe -X utf8 app.py`.
 
 Servidor Python padrão, exclusivamente em `127.0.0.1:3781`; frontend React compilado em `frontend/dist`; persistência SQLite em `data/cortes.db`; fila serial em `pipeline.py`. `research.py` consulta dados públicos via yt-dlp; `local_text.py` usa Argos EN–PT com CTranslate2 int8, duas threads, sem API externa. A redação dos metadados e a pontuação são heurísticas, não um modelo de previsão de alcance.

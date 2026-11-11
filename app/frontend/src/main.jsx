@@ -25,17 +25,17 @@ import {
   Square,
   X,
 } from "lucide-react";
-import "@fontsource/inter/400.css";
-import "@fontsource/inter/500.css";
-import "@fontsource/inter/600.css";
-import "@fontsource/inter/700.css";
+import "@fontsource/inter/latin-400.css";
+import "@fontsource/inter/latin-500.css";
+import "@fontsource/inter/latin-600.css";
+import "@fontsource/inter/latin-700.css";
 import "./style.css";
 
 const api = async (path, body) => {
   const response = await fetch(
     path,
     body === undefined
-      ? {}
+      ? { signal: AbortSignal.timeout(20000) }
       : {
           method: "POST",
           headers: {
@@ -43,8 +43,13 @@ const api = async (path, body) => {
             "X-Cortes-Local": "1",
           },
           body: JSON.stringify(body),
+          signal: AbortSignal.timeout(20000),
         },
-  );
+  ).catch(() => {
+    throw new Error(
+      "O processador local não respondeu. Verifique o atalho Cortes Local e tente novamente.",
+    );
+  });
   const data = await response.json();
   if (!response.ok)
     throw new Error(data.error || "Não foi possível concluir a ação");
@@ -77,6 +82,8 @@ const statusLabel = (job) =>
     error: "Precisa de atenção",
     cancelled: "Cancelado",
     interrupted: "Interrompido",
+    partial: "Meta parcial",
+    paused: "Pausado",
   })[job.status] || job.status;
 
 function App() {
@@ -90,15 +97,49 @@ function App() {
   const [sending, setSending] = useState(false);
   const [filter, setFilter] = useState("all");
   const [options, setOptions] = useState({
+    planner_version: 2,
     topic: "GTA 6",
-    max_sources: 1,
-    max_clips: 4,
+    target_clips: "",
+    max_sources: "",
+    max_clips: 20,
+    max_search_rounds: 12,
     max_duration_minutes: 30,
     whisper_model: "base",
     source_url: "",
+    avoid_duplicates: true,
   });
   const [advanced, setAdvanced] = useState(false);
   const [draft, setDraft] = useState(null);
+  const [plan, setPlan] = useState(null);
+  const [planError, setPlanError] = useState("");
+  const [formError, setFormError] = useState("");
+  const [connectionError, setConnectionError] = useState("");
+  const [planningBusy, setPlanningBusy] = useState(true);
+
+  useEffect(() => {
+    let cancelled = false;
+    setPlanningBusy(true);
+    const timer = setTimeout(async () => {
+      try {
+        const result = await api("/api/plan", options);
+        if (!cancelled) {
+          setPlan(result);
+          setPlanError("");
+        }
+      } catch (error) {
+        if (!cancelled) {
+          setPlan(null);
+          setPlanError(error.message);
+        }
+      } finally {
+        if (!cancelled) setPlanningBusy(false);
+      }
+    }, 350);
+    return () => {
+      cancelled = true;
+      clearTimeout(timer);
+    };
+  }, [options]);
 
   const notify = (message) => {
     setToast(message);
@@ -112,8 +153,11 @@ function App() {
       ]);
       setJobs(list);
       setSystem(details);
+      setConnectionError("");
     } catch (error) {
-      setToast(error.message);
+      setConnectionError(
+        "Não consegui falar com o processador local. Abra o atalho Cortes Local; esta página tentará reconectar.",
+      );
     }
   };
   useEffect(() => {
@@ -124,6 +168,14 @@ function App() {
   const job = jobs.find((item) => item.id === selectedJob);
   const clip =
     job?.clips.find((item) => item.id === selectedClip) || job?.clips[0];
+  useEffect(() => {
+    if (
+      job?.clips.length &&
+      !job.clips.some((item) => item.id === selectedClip)
+    ) {
+      setSelectedClip(job.clips[0].id);
+    }
+  }, [selectedJob, job?.clips, selectedClip]);
   useEffect(() => {
     setDraft(clip ? structuredClone(clip) : null);
   }, [clip?.id, selectedJob]);
@@ -140,13 +192,14 @@ function App() {
   const start = async (event) => {
     event.preventDefault();
     setSending(true);
+    setFormError("");
     try {
       const created = await api("/api/jobs", options);
       setSelectedJob(created.id);
       setPage("review");
       await refresh();
     } catch (error) {
-      notify(error.message);
+      setFormError(error.message);
     } finally {
       setSending(false);
     }
@@ -275,6 +328,11 @@ function App() {
         </div>
       </aside>
       <main>
+        {connectionError && (
+          <div className="persistent-error" role="alert">
+            {connectionError}
+          </div>
+        )}
         <header className="topbar">
           <span>
             {page === "review" && job
@@ -301,7 +359,7 @@ function App() {
               <Clapperboard className="heading-icon" size={28} />
             </div>
             <form className="research-form" onSubmit={start}>
-              <label htmlFor="topic">O que vamos pesquisar?</label>
+              <label htmlFor="topic">Qual é o tema ou pedido?</label>
               <div className="search-row">
                 <Search size={21} />
                 <input
@@ -310,12 +368,15 @@ function App() {
                   onChange={(event) =>
                     updateOption("topic", event.target.value)
                   }
-                  placeholder="Tema, jogo ou assunto"
+                  placeholder="Ex.: encontre vídeos de GTA 6 e me entregue 100 cortes"
                   minLength={2}
-                  maxLength={120}
+                  maxLength={600}
                   required
                 />
-                <button className="primary" disabled={sending}>
+                <button
+                  className="primary"
+                  disabled={sending || planningBusy || !!planError}
+                >
                   {sending ? (
                     <LoaderCircle className="spin" size={17} />
                   ) : (
@@ -324,6 +385,53 @@ function App() {
                   Iniciar pesquisa
                 </button>
               </div>
+              <div className="plan-preview" aria-live="polite">
+                {planningBusy ? (
+                  <span>Interpretando o pedido…</span>
+                ) : planError ? (
+                  <p className="plan-error" role="alert">
+                    {planError}
+                  </p>
+                ) : (
+                  plan && (
+                    <>
+                      <strong>
+                        Pesquisa: {plan.topic} · Meta: {plan.target_clips}{" "}
+                        cortes
+                      </strong>
+                      <span>
+                        Até {plan.max_sources} fontes · {plan.max_search_rounds}{" "}
+                        rodadas de busca · candidatos escolhidos por conteúdo
+                      </span>
+                      <small>
+                        A meta pode exigir horas de trabalho e várias fontes.
+                        Cortes repetidos ou fracos não completam a quantidade.
+                      </small>
+                    </>
+                  )
+                )}
+                {formError && (
+                  <p className="plan-error" role="alert">
+                    {formError}
+                  </p>
+                )}
+              </div>
+              <label className="target-control">
+                Meta de cortes (opcional)
+                <input
+                  type="number"
+                  min="1"
+                  max="1000"
+                  value={options.target_clips}
+                  placeholder="Detectada no pedido; padrão 12"
+                  onChange={(event) =>
+                    updateOption("target_clips", event.target.value)
+                  }
+                />
+                <small>
+                  Preencha para substituir a quantidade escrita no pedido.
+                </small>
+              </label>
               <div className="research-footer">
                 <span>YouTube · pesquisa e edição locais</span>
                 <button
@@ -339,30 +447,60 @@ function App() {
               {advanced && (
                 <div className="preferences">
                   <label>
-                    Vídeos para analisar
+                    Limite de fontes para pesquisar
                     <select
                       value={options.max_sources}
                       onChange={(event) =>
-                        updateOption("max_sources", Number(event.target.value))
+                        updateOption(
+                          "max_sources",
+                          event.target.value ? Number(event.target.value) : "",
+                        )
                       }
                     >
-                      {[1, 2, 3].map((value) => (
+                      <option value="">Automático conforme a meta</option>
+                      {[1, 3, 12, 25, 50, 100, 200].map((value) => (
                         <option key={value}>{value}</option>
                       ))}
                     </select>
                   </label>
                   <label>
-                    Máximo de cortes por vídeo
+                    Teto de candidatos por vídeo
                     <select
                       value={options.max_clips}
                       onChange={(event) =>
                         updateOption("max_clips", Number(event.target.value))
                       }
                     >
-                      {[2, 4, 6, 8, 10].map((value) => (
+                      {[2, 4, 10, 20, 50].map((value) => (
                         <option key={value}>{value}</option>
                       ))}
                     </select>
+                  </label>
+                  <label>
+                    Rodadas de pesquisa
+                    <select
+                      value={options.max_search_rounds}
+                      onChange={(event) =>
+                        updateOption(
+                          "max_search_rounds",
+                          Number(event.target.value),
+                        )
+                      }
+                    >
+                      {[4, 8, 12, 24, 40].map((value) => (
+                        <option key={value}>{value}</option>
+                      ))}
+                    </select>
+                  </label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={options.avoid_duplicates}
+                      onChange={(event) =>
+                        updateOption("avoid_duplicates", event.target.checked)
+                      }
+                    />
+                    Evitar repetir cortes já produzidos
                   </label>
                   <label>
                     Duração máxima da fonte
@@ -462,12 +600,14 @@ function App() {
                       {busy(item) && (
                         <LoaderCircle size={14} className="spin" />
                       )}
-                      {item.status === "ready" && <Check size={14} />}{" "}
+                      {["ready", "partial"].includes(item.status) && (
+                        <Check size={14} />
+                      )}{" "}
                       {statusLabel(item)}
                     </span>
                     <span className="job-clips">
                       {item.clips.length
-                        ? `${item.clips.length} cortes`
+                        ? `${item.clips.length}/${item.options.target_clips || item.options.max_clips * item.options.max_sources} cortes`
                         : item.message}
                     </span>
                     <ArrowRight size={18} />
@@ -515,11 +655,34 @@ function App() {
                 Abrir pasta
               </button>
             </div>
+            <div className="batch-stats">
+              <strong>
+                {job.clips.length}/
+                {job.options.target_clips ||
+                  job.options.max_clips * job.options.max_sources}{" "}
+                cortes prontos
+              </strong>
+              <span>
+                {job.stats?.sources_examined || 0} fontes examinadas ·{" "}
+                {job.stats?.sources_failed || 0} falharam ·{" "}
+                {job.stats?.duplicate_skips || 0} repetidos evitados
+              </span>
+              <span>
+                {job.search_round || 0}/{job.options.max_search_rounds || 1}{" "}
+                rodadas de pesquisa
+              </span>
+            </div>
             {busy(job) && (
               <div className="processing-panel">
                 <div className="processing-title">
                   <LoaderCircle className="spin" size={20} />
                   <strong>{job.message}</strong>
+                  <button
+                    className="text-button"
+                    onClick={() => action("pause")}
+                  >
+                    Pausar
+                  </button>
                   <button
                     className="text-button"
                     onClick={() => action("cancel")}
@@ -528,6 +691,20 @@ function App() {
                     Cancelar lote
                   </button>
                 </div>
+                {job.active_operation && (
+                  <p className="operation-time">
+                    {job.active_operation.label} ·{" "}
+                    {Math.max(
+                      0,
+                      Math.floor(
+                        (Date.now() -
+                          Date.parse(job.active_operation.started_at)) /
+                          1000,
+                      ),
+                    )}{" "}
+                    s nesta etapa
+                  </p>
+                )}
                 <div className="progress">
                   <span style={{ width: `${job.progress}%` }} />
                 </div>
@@ -550,7 +727,13 @@ function App() {
                 </div>
               </div>
             )}
-            {["error", "interrupted", "cancelled"].includes(job.status) && (
+            {[
+              "error",
+              "interrupted",
+              "cancelled",
+              "paused",
+              "partial",
+            ].includes(job.status) && (
               <div className="error-panel">
                 <div>
                   <strong>
@@ -560,10 +743,24 @@ function App() {
                   </strong>
                   <p>{job.error || job.message}</p>
                 </div>
-                <button className="secondary" onClick={() => action("resume")}>
-                  <RefreshCw size={15} />
-                  Retomar lote
-                </button>
+                {job.status !== "partial" && (
+                  <button
+                    className="secondary"
+                    onClick={() => action("resume")}
+                  >
+                    <RefreshCw size={15} />
+                    Retomar lote
+                  </button>
+                )}
+                {["partial", "error"].includes(job.status) &&
+                  !job.options.source_url && (
+                    <button
+                      className="secondary"
+                      onClick={() => action("extend")}
+                    >
+                      Buscar mais fontes
+                    </button>
+                  )}
               </div>
             )}
             {job.warnings?.length > 0 && (

@@ -11,7 +11,9 @@ VIDEO_ID = re.compile(r"^[A-Za-z0-9_-]{11}$")
 
 def canonical(text):
     text = re.sub(r"grand\s+theft\s+auto\s+(vi|6)\b", "gta 6", text, flags=re.I)
-    return re.sub(r"\bgta\s*(vi|6)\b", "gta 6", text, flags=re.I).lower()
+    text = re.sub(r"\bgta\s*(vi|6)\b", "gta 6", text, flags=re.I)
+    text = re.sub(r"grand\s+theft\s+auto\s+(v|5)\b", "gta 5", text, flags=re.I)
+    return re.sub(r"\bgta\s*(v|5)\b", "gta 5", text, flags=re.I).lower()
 
 
 def normalize(entry):
@@ -39,11 +41,63 @@ def normalize(entry):
             "is_live": entry.get("is_live") or entry.get("live_status") == "is_live"}
 
 
-def search(query, runner, directory, count=12):
-    command = ["yt-dlp", "--ignore-errors", "--flat-playlist", "--dump-single-json",
-               "--skip-download", "--no-warnings", f"ytsearch{count}:{query}"]
+def search(query, runner, directory, count=12, recent=False):
+    prefix = 'ytsearchdate' if recent else 'ytsearch'
+    command = ["yt-dlp", "--flat-playlist", "--dump-single-json",
+               "--skip-download", "--no-warnings", f"{prefix}{count}:{query}"]
     data = json.loads(runner(command, directory, capture=True, timeout=180))
     return [item for entry in data.get("entries", []) if entry and (item := normalize(entry))]
+
+
+def discover_page(options, runner, directory, notify, round_index, excluded):
+    """Uma rodada durável; o controlador chama novas rodadas quando falta material."""
+    topic = options['topic']
+    if options.get('source_url'):
+        if round_index:
+            return [], [], {'query': 'link fornecido', 'sample_size': 0}
+        item = hydrate({'url': options['source_url']}, runner, directory)
+        if not item or item['is_live'] or not 12 <= (item['duration'] or 0) <= options['max_duration_minutes'] * 60:
+            raise ValueError('A fonte está indisponível, ao vivo ou fora da duração permitida.')
+        item.update(research_score=None, score_basis={'selection':'link fornecido'})
+        chosen = [] if item['id'] in excluded else [item]
+        query = 'link fornecido'
+    else:
+        variants = ['streamer reaction','reação trailer','melhores momentos','reaction gameplay',
+                    'novidades gameplay','reaction highlights','stream highlights','análise detalhes',
+                    'streamers reação','cortes gameplay','trailer react','ao vivo melhores momentos']
+        query = topic + ' ' + variants[round_index % len(variants)]
+        notify('research', 0, f'Pesquisa {round_index + 1}/{options["max_search_rounds"]}: {query}')
+        sample = search(query, runner, directory, count=40, recent=round_index >= len(variants))
+        terms = set(re.findall(r'\w+', canonical(topic))) - {'de','do','da','the','and','reacts','reaction','react','reação','reacoes'}
+        version = re.search(r'\bgta\s+([56])\b',canonical(topic))
+        def relevant(item):
+            words = set(re.findall(r'\w+', canonical(item['title'])))
+            if version and not {'gta',version[1]} <= words:
+                return False
+            return len(terms & words) >= max(1, (len(terms)+1)//2)
+        eligible = [item for item in sample if item['id'] not in excluded and not item['is_live']
+                    and 45 <= (item['duration'] or 0) <= options['max_duration_minutes'] * 60
+                    and relevant(item)]
+        chosen = rank(eligible, topic)
+        # Interleave creators rather than exhausting one channel first.
+        buckets = {}
+        for item in chosen:
+            buckets.setdefault(item.get('channel_id') or item['channel'], []).append(item)
+        chosen = []
+        while any(buckets.values()):
+            for bucket in buckets.values():
+                if bucket:
+                    chosen.append(bucket.pop(0))
+        for item in chosen:
+            item.update(discovery_query=query, discovery_round=round_index+1)
+    references = []
+    if round_index == 0:
+        try:
+            refs = search(topic + ' reaction shorts', runner, directory, count=12)
+            references = rank([item for item in refs if item.get('duration') and item['duration'] <= 180], topic)[:5]
+        except (RuntimeError, ValueError, OSError):
+            pass
+    return chosen, references, {'query':query, 'new_candidates':len(chosen)}
 
 
 def hydrate(video, runner, directory):

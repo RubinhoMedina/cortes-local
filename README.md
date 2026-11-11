@@ -2,6 +2,12 @@
 
 Sistema interno de pesquisa no YouTube, seleção e produção de cortes, com revisão humana. Backup privado da instalação validada no Windows. Não adicionar colaboradores nem alterar a visibilidade sem autorização do proprietário.
 
+## Lotes grandes — versão 2
+
+Pedidos como **encontre vídeos de GTA6 e me entregue 100 cortes** são convertidos em tema e meta antes de iniciar. Há pesquisa incremental, fila persistente, deduplicação por tempo/fala, pausa, retomada automática após interrupção e resultados parciais com motivo explícito. Leia `docs/LOTES-GRANDES.md`.
+
+O frontend compilado atual está em `app/frontend/bundle.zip.b64`, com SHA-256. O restaurador aplica o código atual e essa interface depois dos volumes de base, para não recuperar uma interface antiga. Os volumes de vídeo/modelos continuam como snapshot validado anterior; novos lotes criados no computador não são sincronizados automaticamente com o GitHub.
+
 ## Conteúdo
 
 - `app/`: painel React, servidor local Python, fila, pesquisa, tradução, análise das aberturas de referências, textos e capas.

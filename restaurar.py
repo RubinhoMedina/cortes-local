@@ -5,6 +5,9 @@ import hashlib
 import json
 import tempfile
 import zipfile
+import base64
+import io
+import shutil
 
 
 def digest(path):
@@ -53,6 +56,32 @@ def restore(repository, destination):
                         raise ValueError('Falha de integridade: ' + item['path'])
                     restored += 1
         print(archive['name'] + ': íntegro', flush=True)
+    # Volumes preserve the baseline; tracked source is the current application version.
+    overlays = [('app','edicao-ia/cortes-app'),('motor','cortes-trabalho/001-E07OTlhncP0'),
+                ('integracoes/youtube-mcp','edicao-ia/youtube-mcp')]
+    for source_name,target_name in overlays:
+        source_root=repository/source_name
+        if not source_root.is_dir():
+            continue
+        for source in source_root.rglob('*'):
+            if source.is_file() and source.name not in {'bundle.zip.b64','bundle.sha256'}:
+                target=destination/target_name/source.relative_to(source_root)
+                target.parent.mkdir(parents=True,exist_ok=True)
+                shutil.copy2(source,target)
+    bundle=repository/'app/frontend/bundle.zip.b64'
+    if bundle.exists():
+        payload=base64.b64decode(bundle.read_text(encoding='ascii'),validate=True)
+        expected=(bundle.parent/'bundle.sha256').read_text(encoding='ascii').strip()
+        if hashlib.sha256(payload).hexdigest()!=expected:
+            raise ValueError('Interface compilada corrompida.')
+        target=destination/'edicao-ia/cortes-app/frontend/dist'
+        target.mkdir(parents=True,exist_ok=True)
+        with zipfile.ZipFile(io.BytesIO(payload)) as package:
+            if package.testzip():raise ValueError('ZIP da interface inválido.')
+            if any(not (target/name).resolve().is_relative_to(target.resolve()) for name in package.namelist()):
+                raise ValueError('Caminho inseguro no pacote da interface.')
+            package.extractall(target)
+    print('Código atual e interface compilada aplicados; volumes originais preservados.',flush=True)
     return restored
 
 

@@ -80,7 +80,7 @@ def package(topic, lines, references, language, source_title):
     score = min(95, 50 + min(questions, 2)*8 + min(repeated, 6)*2 + min(reactions, 4)*2 + 8)
     names = list(dict.fromkeys(match.group(0).title() for match in
                 re.finditer(r"\b(Franklin|Michael|Lester|Lucia|IShowSpeed|Rockstar)\b", combined, re.I)))
-    tags = list(dict.fromkeys([topic, "GTA 6", "reação", "Shorts"] + names))[:8]
+    tags = list(dict.fromkeys([topic, "reação", "Shorts"] + names))[:8]
     result.update({
         "package_version": PACKAGE_VERSION, "translations": translated, "tags": tags, "editorial_score": score,
         "reason": f"Sinais da fala: {questions} perguntas, {min(repeated, 6)} repetições e {min(reactions, 4)} reações verbais. Revisar contexto e desfecho.",

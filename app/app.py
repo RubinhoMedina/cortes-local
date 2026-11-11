@@ -11,44 +11,26 @@ import threading
 import urllib.parse
 import zipfile
 
-import pipeline
+import batch
+import planning
+import process_lifetime
 import storage
 
 ROOT = Path(__file__).resolve().parent
 TOOL_PATHS = json.loads((ROOT / "tools.json").read_text(encoding="utf-8-sig"))
 os.environ["PATH"] = os.pathsep.join(dict.fromkeys(
     [str(Path(path).parent) for path in TOOL_PATHS.values()] + [os.environ.get("PATH", "")]))
-PORT = 3781
+PORT = int(os.environ.get('CORTES_APP_PORT','3781'))
 logging.basicConfig(filename=ROOT / "data/aplicativo.log", level=logging.INFO,
                     format="%(asctime)s %(levelname)s %(message)s", encoding="utf8")
-MANAGER = pipeline.Pipeline()
+MANAGER = None
 BUNDLE_LOCK = threading.Lock()
 
 
 def validate_options(data):
-    topic = str(data.get("topic", "GTA 6")).strip()
-    if not 2 <= len(topic) <= 120:
-        raise ValueError("Informe um tema entre 2 e 120 caracteres")
-    options = {"topic": topic, "max_sources": int(data.get("max_sources", 1)),
-               "max_clips": int(data.get("max_clips", 4)),
-               "max_duration_minutes": int(data.get("max_duration_minutes", 30)),
-               "whisper_model": data.get("whisper_model", "base")}
-    if not 1 <= options["max_sources"] <= 3 or not 1 <= options["max_clips"] <= 10:
-        raise ValueError("Escolha até 3 vídeos e até 10 candidatos por vídeo")
-    if not 2 <= options["max_duration_minutes"] <= 120:
-        raise ValueError("A duração máxima deve ficar entre 2 e 120 minutos")
-    if options["whisper_model"] not in {"base", "large-v3-turbo"}:
-        raise ValueError("Modelo de transcrição inválido")
-    url = str(data.get("source_url", "")).strip()
-    if url:
-        parsed = urllib.parse.urlparse(url)
-        if parsed.scheme != "https" or parsed.hostname not in {"youtube.com", "www.youtube.com", "youtu.be", "m.youtube.com"}:
-            raise ValueError("Use um link HTTPS do YouTube")
-        identifier = parsed.path.strip("/") if parsed.hostname == "youtu.be" else urllib.parse.parse_qs(parsed.query).get("v", [""])[0]
-        if not re.fullmatch(r"[A-Za-z0-9_-]{11}", identifier):
-            raise ValueError("O link deve apontar para um vídeo do YouTube")
-        options["source_url"] = f"https://www.youtube.com/watch?v={identifier}"
-    return options
+    if data.get('planner_version') != planning.VERSION and 'max_sources' in data and 'max_clips' in data:
+        return planning.migrate(data)
+    return planning.make_plan(data)
 
 
 class Handler(BaseHTTPRequestHandler):
@@ -130,11 +112,11 @@ class Handler(BaseHTTPRequestHandler):
         parts = path.strip("/").split("/")
         try:
             if path == "/api/health":
-                self.json({"status": "ok", "app": "cortes-local", "version": "1.0.0"})
+                self.json({"status": "ok", "app": "cortes-local", "version": "2.0.0"})
             elif path == "/api/system":
                 self.json({"local_model_ready": (ROOT / "models/argos/translate-en_pt-1_9/model/model.bin").exists(),
                            "research_provider": "YouTube · yt-dlp", "paid_services": False,
-                           "active_job": MANAGER.active, "default_topic": "GTA 6"})
+                           "active_job": MANAGER.active, "default_topic": "GTA 6", "planner_version":planning.VERSION})
             elif path == "/api/jobs":
                 self.json(storage.jobs())
             elif len(parts) == 3 and parts[:2] == ["api", "jobs"]:
@@ -196,6 +178,8 @@ class Handler(BaseHTTPRequestHandler):
                 job = storage.create(validate_options(body))
                 MANAGER.submit(job["id"])
                 self.json(job, 201)
+            elif parts == ['api','plan']:
+                self.json(validate_options(body))
             elif len(parts) == 4 and parts[:2] == ["api", "jobs"]:
                 job = storage.get(parts[2])
                 action = parts[3]
@@ -203,6 +187,25 @@ class Handler(BaseHTTPRequestHandler):
                     MANAGER.submit(job["id"])
                 elif action == "cancel":
                     MANAGER.cancel(job["id"])
+                elif action == 'pause':
+                    MANAGER.pause(job['id'])
+                elif action == 'extend':
+                    if job['status'] not in {'partial','error','cancelled','paused'}:
+                        raise ValueError('A pesquisa só pode ser ampliada quando o lote está parado.')
+                    options = planning.migrate(job['options'])
+                    if options.get('source_url'):
+                        raise ValueError('Esta fonte específica já terminou. Inicie outro lote sem link para pesquisar outros vídeos.')
+                    if options['max_sources']>=200 and options['max_search_rounds']>=40:
+                        raise ValueError('Os limites deste plano já foram alcançados. Inicie um novo lote com tema mais específico.')
+                    options['max_sources'] = min(200, options['max_sources']+20)
+                    options['max_search_rounds'] = min(40, options['max_search_rounds']+4)
+                    with storage.LOCK:
+                        latest = storage.get(job['id'])
+                        latest['options'] = options
+                        # Failed queries may be retried after the service has recovered.
+                        latest['discovery'] = [page for page in latest.get('discovery',[]) if not page.get('error')]
+                        storage.save(latest)
+                    MANAGER.submit(job['id'])
                 elif action == "open":
                     os.startfile(storage.DATA / job["id"])
                 else:
@@ -244,7 +247,9 @@ class Handler(BaseHTTPRequestHandler):
 
 
 if __name__ == "__main__":
+    process_lifetime.own_server_children()
     server = ThreadingHTTPServer(("127.0.0.1", PORT), Handler)
     server.daemon_threads = True
+    MANAGER = batch.Pipeline()
     logging.info("Cortes Local em http://127.0.0.1:%s", PORT)
     server.serve_forever()
