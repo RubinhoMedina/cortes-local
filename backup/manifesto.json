@@ -1,7 +1,7 @@
 {
   "created_at": "2026-11-11T15:13:31.803137+00:00",
   "format": 1,
-  "part_bytes": 20971520,
+  "part_bytes": 3145728,
   "archives": [
     {
       "name": "instalacao-e-lotes.zip",
@@ -9,19 +9,79 @@
       "sha256": "9488341e15734411481b4b8cc224d7b0edd971140ae0f5c0784b99ae0d6e7b82",
       "parts": [
         {
-          "name": "instalacao-e-lotes.zip.part001",
-          "bytes": 20971520,
-          "sha256": "d90a3548ff32cc3320329a8682c629a634dc1d9f8fd9e5e5454248de0ea89d8b"
+          "name": "instalacao-e-lotes.zip.segment0001",
+          "bytes": 3145728,
+          "sha256": "1b367b54eb7bcc972883d8dd503bbcaf34e9baca8be682b40bea74a4fde2569f"
         },
         {
-          "name": "instalacao-e-lotes.zip.part002",
-          "bytes": 20971520,
-          "sha256": "712908aa86d01a6df03972a4c64a3034ebfb808d6aaf869de19f80a8ed439261"
+          "name": "instalacao-e-lotes.zip.segment0002",
+          "bytes": 3145728,
+          "sha256": "09ec3c82313dd625e9afe04db39b2a9aceda39e68bb4261d653d2ba35d7b9db3"
         },
         {
-          "name": "instalacao-e-lotes.zip.part003",
-          "bytes": 3452773,
-          "sha256": "195f6f8fd6d32a5abae23bd11c69176e9dc1f94dee52d745fbde9e6df33077db"
+          "name": "instalacao-e-lotes.zip.segment0003",
+          "bytes": 3145728,
+          "sha256": "98b2f37ef143464a421497056bf50d6566c492be7f87f89649cf472fa0547935"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0004",
+          "bytes": 3145728,
+          "sha256": "deb4b38af204b4885eacae4e8487e11acfbcb0acc89b8ef96f7d36618959ec8a"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0005",
+          "bytes": 3145728,
+          "sha256": "5652e6cc991a1df07c2e3401d341bc0e77ec4bddfd5cd0f298b4ab7975675f0c"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0006",
+          "bytes": 3145728,
+          "sha256": "02190f9a3f52b9a024a6f8a9486bb290419253807c4cee804b9d47be1ad779a7"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0007",
+          "bytes": 3145728,
+          "sha256": "343c43b8b94db5b8d099a7a3077ee8d7fbcb9fb8ef92a67755cfea55db2f9968"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0008",
+          "bytes": 3145728,
+          "sha256": "24982d4e7c1fb8049f7dd79ba38bd81f0968731ef45323fd8d538e31bb927aa1"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0009",
+          "bytes": 3145728,
+          "sha256": "b61a96e940f76cfa60d6bc1496476943541704735fc46edcca98328fbcf805b3"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0010",
+          "bytes": 3145728,
+          "sha256": "a2b76b8acccf45f8e3da26e8640e94d26aa7d53bf7efeade2f61d55c861cd50c"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0011",
+          "bytes": 3145728,
+          "sha256": "21444e25d01a9e6681d3ba0ee6e072ce7e8c7b952792e7ebd010a0487fb96c52"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0012",
+          "bytes": 3145728,
+          "sha256": "6648d92a882dd68bfdb18d0a124393e6920788e7e575934c35087a72d6658292"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0013",
+          "bytes": 3145728,
+          "sha256": "5f7aaeb2e73c4f1161046159af0919dffa8ecc03b3513e5ed08da5169910a8dc"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0014",
+          "bytes": 3145728,
+          "sha256": "bb56ca2ed1c403929fcbc0683d12e20c8d0bfc22bb842ebb292a7a85712e00c7"
+        },
+        {
+          "name": "instalacao-e-lotes.zip.segment0015",
+          "bytes": 1355621,
+          "sha256": "706f3ba17ae4fecf76911a92684abf4cc380a811b6e2ddb62c71f3e38e4275f8"
         }
       ],
       "files": [
@@ -923,29 +983,164 @@
       "sha256": "7e17503c95e5489a2f263deeaa8521cffb35a9bb19ac5914ee453304af9db19f",
       "parts": [
         {
-          "name": "piloto-e-motor.zip.part001",
-          "bytes": 20971520,
-          "sha256": "b53126497e77d027247b0070cf884f192ab5b256d426ffe3e99ee56026115433"
+          "name": "piloto-e-motor.zip.segment0001",
+          "bytes": 3145728,
+          "sha256": "580c6ba3ed334d723fb0e8f1ea2b3c734f8a44ba45393dd37da139be99ed312a"
         },
         {
-          "name": "piloto-e-motor.zip.part002",
-          "bytes": 20971520,
-          "sha256": "6e8c28a6c3adec16ae1abdb69f0bf0e6f5cdac74611417d09eebe26a53e8734f"
+          "name": "piloto-e-motor.zip.segment0002",
+          "bytes": 3145728,
+          "sha256": "195382736fe4c57c5c877a19acccc017407cec0bf91bd6b5d80dee078867424f"
         },
         {
-          "name": "piloto-e-motor.zip.part003",
-          "bytes": 20971520,
-          "sha256": "e98922ea76d2d8e6f573598fb01c35b269be3f11a17409392377609ece064287"
+          "name": "piloto-e-motor.zip.segment0003",
+          "bytes": 3145728,
+          "sha256": "895435aaf6b84f6b647c06ff75a9bf00bc8485b43b37da52bb3d2f676a919e62"
         },
         {
-          "name": "piloto-e-motor.zip.part004",
-          "bytes": 20971520,
-          "sha256": "d6197faf219ae3bdf8e24603274ff60c5881445e4c32b2ae0b4bba8facad18eb"
+          "name": "piloto-e-motor.zip.segment0004",
+          "bytes": 3145728,
+          "sha256": "9b4bc1343a29b89d9d54373759064b4c0b106aa7c153fb8b56c93629fe25a9fe"
         },
         {
-          "name": "piloto-e-motor.zip.part005",
-          "bytes": 13792586,
-          "sha256": "bc8784d9774c188d41ed07dfc0398d57c30ce9978e7846619ec5ba3c4fe8b700"
+          "name": "piloto-e-motor.zip.segment0005",
+          "bytes": 3145728,
+          "sha256": "18a0ba188d07486098429f8d0b219ba986a54c507ab0f19ff0c9da2ce562711b"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0006",
+          "bytes": 3145728,
+          "sha256": "634f5bcff06ef8665d6d220f6bdb82b7a181ff3d10534301ac4bd43810b67a1c"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0007",
+          "bytes": 3145728,
+          "sha256": "c02729b798a94aaf28d58751d83388e9200c98aefb08e54544c15f9778ee6868"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0008",
+          "bytes": 3145728,
+          "sha256": "a123a825763002ed9c328aeb1f5453a2fac139106f365bb36fc0e02bb98d4988"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0009",
+          "bytes": 3145728,
+          "sha256": "6d5a4c0cdeced2c2c33984a8c676e4505aed8c6d02792e95a4fa6b88ab5be67d"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0010",
+          "bytes": 3145728,
+          "sha256": "26aa7ac9fde60cdfd6188267a35594f6dfad3a807b81da8e12f787327509e0d6"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0011",
+          "bytes": 3145728,
+          "sha256": "d792aff0b9f833c02cc3ae22191122ceeebaa6a875ba596c3352468b466da2cc"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0012",
+          "bytes": 3145728,
+          "sha256": "1ad04f19da858874bfb9f4e1838b7b31c3120817d770e5619eb78fb98f0cc091"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0013",
+          "bytes": 3145728,
+          "sha256": "9f319c43e1d7f336a856039a1f69b1dcf526026e7bb1de397b170981f3610e37"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0014",
+          "bytes": 3145728,
+          "sha256": "aa9bc4cde7c9f43c13f18cb7d15597960d5bca5a72ddd9aaab77d227aa210dc9"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0015",
+          "bytes": 3145728,
+          "sha256": "8802189082364f5dad7805aba19bd22435f3788bb0ab1230e03980784dfbffdb"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0016",
+          "bytes": 3145728,
+          "sha256": "3e5f4d4e920a9974528f3d27cc2402b959fcda3dc04a385f7828e74bd031681a"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0017",
+          "bytes": 3145728,
+          "sha256": "b7c62857178671c69f6f533e17bc23b2c26a38e81b7c0e0f4bde7838961a0642"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0018",
+          "bytes": 3145728,
+          "sha256": "c29f5b0c76b9dd79f8d7665378724117681c9471bafaf53852132e936cfa8de0"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0019",
+          "bytes": 3145728,
+          "sha256": "9df63ffbd8c9cd86bf82cf3f7a43c00ac175f697bbc7226e1d0df1d893593adb"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0020",
+          "bytes": 3145728,
+          "sha256": "97d4d6a8859792868845ef2bc7e66b39d7e1d918a1b40ffa234e56fd2e14a530"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0021",
+          "bytes": 3145728,
+          "sha256": "eb9ca0d1326e949426ef5f1c3852bce89f553f1433752ce65506c96b02ed77d0"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0022",
+          "bytes": 3145728,
+          "sha256": "cd0d7c5aa7f97327af3666e6984fb2dbee35fa2bd2c9169696842eaef8b379d1"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0023",
+          "bytes": 3145728,
+          "sha256": "da6f2ef4b26d0e64efda871e05d58d76918527c2f3b6bdfaf1e07badc0f1f73e"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0024",
+          "bytes": 3145728,
+          "sha256": "c554d75e201d8117fbc1505d3da8a76c4f45105254b52231e922024334a71b11"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0025",
+          "bytes": 3145728,
+          "sha256": "2f09b2e73c315f161957fec77d4fff6cd0e45d75a44d54913a8200641d7088d9"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0026",
+          "bytes": 3145728,
+          "sha256": "90c89b697868d2502e21fc76266a054eb02b1997470dfb1a4a45f0055f18afb7"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0027",
+          "bytes": 3145728,
+          "sha256": "283943fdc42537c5a3a28827f360b448df846371a5832ababbadc2529ccaa45e"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0028",
+          "bytes": 3145728,
+          "sha256": "548e397f05291037514f4ab4c84c523091f88125819dbe25ffc7b0d3f4ad0605"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0029",
+          "bytes": 3145728,
+          "sha256": "cf76523a8c270951ad37ff08b8007da5259a276961f6189e95cb3ea67f1269cb"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0030",
+          "bytes": 3145728,
+          "sha256": "8282d632ea521c8641aea3e6af1805fa2661e109c25b8c22f8b7ba7f00cd1070"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0031",
+          "bytes": 3145728,
+          "sha256": "7a71a4aee2a1c95fbd9f0ce7409b16f5b6226cca69ef1f0b952b97d1dacd9dac"
+        },
+        {
+          "name": "piloto-e-motor.zip.segment0032",
+          "bytes": 161098,
+          "sha256": "5424e2ab14807435f1c1a9ea01a119ce2589871beb9286b2218dcfbf85f96390"
         }
       ],
       "files": [
@@ -1322,54 +1517,324 @@
       "sha256": "3686c0caf3ad04cc867ddd5c8e52c56fc5d0fdbc014ad92b5dd522d79ce7dc01",
       "parts": [
         {
-          "name": "modelos-ativos.zip.part001",
-          "bytes": 20971520,
-          "sha256": "11ec9b40e4ffb87c36936989a71330a4e711ab7e03ff285f2033b329f6f86138"
+          "name": "modelos-ativos.zip.segment0001",
+          "bytes": 3145728,
+          "sha256": "77f88654ea0d3cd27193f7ca998012f352b9ad690a46e1ef480b6f48f7e2b3c3"
         },
         {
-          "name": "modelos-ativos.zip.part002",
-          "bytes": 20971520,
-          "sha256": "1ae74ba860953b587fd016f474d85d75dddce88fe046920ecaf4e0ad86a7b958"
+          "name": "modelos-ativos.zip.segment0002",
+          "bytes": 3145728,
+          "sha256": "9026184705ae51b0834fd233ae82a490deecfd88102eac674d3bb2d5869f26a1"
         },
         {
-          "name": "modelos-ativos.zip.part003",
-          "bytes": 20971520,
-          "sha256": "05cda8b016d2d4dc8cfd252369941acef992f548842b169de697f85043f680f1"
+          "name": "modelos-ativos.zip.segment0003",
+          "bytes": 3145728,
+          "sha256": "b22398a227f97365aedf90809795722579b7350aae88db3d682b890e73d2a547"
         },
         {
-          "name": "modelos-ativos.zip.part004",
-          "bytes": 20971520,
-          "sha256": "c10fba456a9e419d60470b961544a97855404143a708c9c390e0b551e36645f6"
+          "name": "modelos-ativos.zip.segment0004",
+          "bytes": 3145728,
+          "sha256": "42e5ab393bfef82ce47d140d408aa53c903ae1031c0d8615a25829d384e94cf7"
         },
         {
-          "name": "modelos-ativos.zip.part005",
-          "bytes": 20971520,
-          "sha256": "66a830b61175b7debcbf83fc42830637207cc14e7453283e52a149e75c28bc37"
+          "name": "modelos-ativos.zip.segment0005",
+          "bytes": 3145728,
+          "sha256": "5ae088e785a3a822ad4d00e39cc7d90d8cac779d8e54a95ee329b183644d73ca"
         },
         {
-          "name": "modelos-ativos.zip.part006",
-          "bytes": 20971520,
-          "sha256": "67e353750056d280e262f89d7781f0ba796107349b919180d10dacc13e4161de"
+          "name": "modelos-ativos.zip.segment0006",
+          "bytes": 3145728,
+          "sha256": "6c1a4678368df1033fee07287d31632f36a53d625406efbdc7f906319d093463"
         },
         {
-          "name": "modelos-ativos.zip.part007",
-          "bytes": 20971520,
-          "sha256": "828f72b89340b6284e94b7434fd88da192a3e3152d84549a69cf8da39bc831ab"
+          "name": "modelos-ativos.zip.segment0007",
+          "bytes": 3145728,
+          "sha256": "f2223db8ea5c246ebd1ccbea1efa7704bc3c0f81cb37b1c5d882d5a43bf80a5a"
         },
         {
-          "name": "modelos-ativos.zip.part008",
-          "bytes": 20971520,
-          "sha256": "eb4cdc56077fd0cb45ae401089cc0c5f16743247e5261f071e9996287f7a6ae1"
+          "name": "modelos-ativos.zip.segment0008",
+          "bytes": 3145728,
+          "sha256": "3be7a6154a06a4118cdcf64aefc35ad5a4603c9625c29bc3f855cabc8a6e46f3"
         },
         {
-          "name": "modelos-ativos.zip.part009",
-          "bytes": 20971520,
-          "sha256": "bda62e48ef2d9c732d7ba2a7d4040749d6104bea56455634e80c8e393f3bc8e7"
+          "name": "modelos-ativos.zip.segment0009",
+          "bytes": 3145728,
+          "sha256": "5659fb948e628d6e5f523eb248012b00c6563553341abc904e9fc96acf74bb7a"
         },
         {
-          "name": "modelos-ativos.zip.part010",
-          "bytes": 12083931,
-          "sha256": "c0f6b32025d2942a0333cbf6162650a8cb6174330a9a62cabea730141be16b7e"
+          "name": "modelos-ativos.zip.segment0010",
+          "bytes": 3145728,
+          "sha256": "6502b57e53c27244bc8b59c3635f2a09ff4ceea352553bc99acc1db0c8460d1c"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0011",
+          "bytes": 3145728,
+          "sha256": "45bbff95d8ab153f33aa3459ca49afe4df0088d944d1d3ad22524a6c95c150e5"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0012",
+          "bytes": 3145728,
+          "sha256": "05c6c07820907b012a6958a5222765f745c706ca7703d6e20ad10806a1c1acd7"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0013",
+          "bytes": 3145728,
+          "sha256": "ee4291450a1a47f7726e6cc872865451bdab88458a8f4602393a6c4a582f0a24"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0014",
+          "bytes": 3145728,
+          "sha256": "06d1ff4e9babc09515e1b24f30cd8a25d5823a49bbc740afba7717e0c1c3cb08"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0015",
+          "bytes": 3145728,
+          "sha256": "cc71ab636b763e0c8070337d1e705a24e9137c53a670952c3cc1a30eddaeef77"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0016",
+          "bytes": 3145728,
+          "sha256": "ae095c8016c9d6a6180081b68b7f47623e9fc9a648ee8a241251ebe2f7d09e74"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0017",
+          "bytes": 3145728,
+          "sha256": "172c40f3f67909ee4be1707f3c241596aef9a161a862b2cab91ac5aaf25737bc"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0018",
+          "bytes": 3145728,
+          "sha256": "b1d2d6ed6398a30a1c2698d60e8c13f858d770347c05fd425961cf58a3c134d9"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0019",
+          "bytes": 3145728,
+          "sha256": "4f021df4e8398bdeb75abcaa1aa731de99757738389d7b2dcd758cd362f178ab"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0020",
+          "bytes": 3145728,
+          "sha256": "87941680caf3047bdbc0c57ae70bcf03f34f24b66d7467d289764a90d3ee512a"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0021",
+          "bytes": 3145728,
+          "sha256": "44645629158d2090c2ffdb32432c04a263d347fa56f6bfc0b217a5bab748be2d"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0022",
+          "bytes": 3145728,
+          "sha256": "8bbb5e4c5dd9b47905f29163cf26735b2e9d8bd270c25b9865c8f617a5eacadf"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0023",
+          "bytes": 3145728,
+          "sha256": "ee35088139b4b5dac1969cb729b07e1df507e4de553945b547cefaefe943cf48"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0024",
+          "bytes": 3145728,
+          "sha256": "e8bdcfc1dfbc3dc827fc0f9840833981fd3da8da9c39d20e3832a6afb83b8486"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0025",
+          "bytes": 3145728,
+          "sha256": "1c4bed577a5690ecdd38429ac5421cbde788c04d78cb9ece994e6b2f16cea8b2"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0026",
+          "bytes": 3145728,
+          "sha256": "bb3177653950de9a76423636d62d9dc25563af1f1e92f59524ec88337627e111"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0027",
+          "bytes": 3145728,
+          "sha256": "c29c98816a7ac8f3b8d5bbc3cb0f434f63b41ba063afa6adce9b0dfa8e5008b8"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0028",
+          "bytes": 3145728,
+          "sha256": "93e17c798a720b8c2e40be7b5e85fce3bc06757109d713a6fb08649df6af374b"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0029",
+          "bytes": 3145728,
+          "sha256": "3d38163f66b5c99d706149bda03f437d0ec0f5a074a77813235cea9d13c41b08"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0030",
+          "bytes": 3145728,
+          "sha256": "24c16cde5dd15b4fcc795412e20e74ea733506d521c77da9236eeeb604dfad63"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0031",
+          "bytes": 3145728,
+          "sha256": "2a76b2ddce89c822589bda8b0b612629fef5f1ba7158c4c72cdbfa9bf9e80476"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0032",
+          "bytes": 3145728,
+          "sha256": "1a12cf2dbd90c428ef651af0094fe2c933daec2fea2a5f26f5a1e6259746b1b6"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0033",
+          "bytes": 3145728,
+          "sha256": "fa53e01526a97f8410e8c19762318bc6cf0160227734aedc88601553e4d8138b"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0034",
+          "bytes": 3145728,
+          "sha256": "05a0a815158b5a218a501fe8a7fb6977231a33097fc2884e6ad92a3d86e99824"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0035",
+          "bytes": 3145728,
+          "sha256": "b701e76ddfbbfe834aed6a21e2e95b0e6d089ba51431d06de7a31aa77324e4f9"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0036",
+          "bytes": 3145728,
+          "sha256": "8a7d3c041ff007c87719425ce1d719daac8ee78d8f144175398caf6921f917e1"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0037",
+          "bytes": 3145728,
+          "sha256": "e6da4d6dd83bcf78f73b0cd0ac7544782103af7544e7ba1504d2cd1defadcfb5"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0038",
+          "bytes": 3145728,
+          "sha256": "d0b68de43de388bcc07c84f6dad6477201df2f578bb763f23c4539372645bbfb"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0039",
+          "bytes": 3145728,
+          "sha256": "e8c5a126338ad3519261606a0257997145f2115f8f48bb3a9ac9b47d625b467b"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0040",
+          "bytes": 3145728,
+          "sha256": "98c728b38ac5f0fc49576fe82f24f09eb22270720a69f350d374811bf458ab14"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0041",
+          "bytes": 3145728,
+          "sha256": "107cf6d9758ac7d3f5dffe3f3551dbe67543a8e9626ae985398ea286ad577633"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0042",
+          "bytes": 3145728,
+          "sha256": "39d51cbe357f5a9326d12600d56116352cc2d3e4e2a27e167226123f5965a665"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0043",
+          "bytes": 3145728,
+          "sha256": "5d2aaeba6ef1ecb02f402c6ee5c8239253b030fb879f2d55c2e5c232f3a5acff"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0044",
+          "bytes": 3145728,
+          "sha256": "7fe2444d9dc0a8da3d258dfb1149de520cd36f82160e5bc7678c66bde0f89953"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0045",
+          "bytes": 3145728,
+          "sha256": "36f6dc9339fdb2638f1a4345bcf98bdc7e4e9d7cb5b607ee31b9755c64be861c"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0046",
+          "bytes": 3145728,
+          "sha256": "844c5b7ec5582e59dcaf31037bb720ae3246a75267e5744750046a621fd4684f"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0047",
+          "bytes": 3145728,
+          "sha256": "e827bf035ee05921faf91d714b244e8c1ed6f97a98ecf42a51283170c6850105"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0048",
+          "bytes": 3145728,
+          "sha256": "ea75bfbd4d996dc114b57a24e2576312f3e3fb75d48639d8b59067b181439bb9"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0049",
+          "bytes": 3145728,
+          "sha256": "4275042fe49c8eb7d9e0a05bb0551333a586ea5b8a65ab82b0ab24aacb892fde"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0050",
+          "bytes": 3145728,
+          "sha256": "50b0835514b31727ffe44c892135947f24b465dfbd0a42382c9f32434a24f8a8"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0051",
+          "bytes": 3145728,
+          "sha256": "74895ee2691052ae5072cf726fc0c497c7627fcf145c30ce60311030206abde7"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0052",
+          "bytes": 3145728,
+          "sha256": "61004a23530515c98a6ab939401d5295d6e6c30d00ffa182fbf0e911d625ca6e"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0053",
+          "bytes": 3145728,
+          "sha256": "1f9371d2978c179eef2fe772554088b2c370313433e13344c4cf43584ec46ac0"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0054",
+          "bytes": 3145728,
+          "sha256": "99482c9248c908a3347e5aeda473c5c4488cabe0223518c7a5f83d6638a0d023"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0055",
+          "bytes": 3145728,
+          "sha256": "c8c2732e117dce1ef63099353baa18d19bfc17b3dd77d5857e2de46bf42ff0ca"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0056",
+          "bytes": 3145728,
+          "sha256": "fe171815c7f2f3f287ffb8e8b9c29ac90f13651b4a1682a77bebc53aaab59eb2"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0057",
+          "bytes": 3145728,
+          "sha256": "5d398d9cbcef934406de416414e89b9f90ff5665c2badc107f7e8254e8070ed8"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0058",
+          "bytes": 3145728,
+          "sha256": "41d0918af2b34281d236cac8fab46fb90142254888c1029ba6572860319bd5cc"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0059",
+          "bytes": 3145728,
+          "sha256": "1379330df55dd4e1ed57ad7c69af8661bcafe87bc0b18aaa8832f9d956f05e02"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0060",
+          "bytes": 3145728,
+          "sha256": "9492fdf1bdc687a117732f46c3c4ced23b95a075ad7a05f73526998820ebd7fb"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0061",
+          "bytes": 3145728,
+          "sha256": "89b4b54ff19ccf978d35ebc8ac8460532c1b6b0208fc48e6f5166c5342923f68"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0062",
+          "bytes": 3145728,
+          "sha256": "6fe0c047b6cb9fd6f30315230e18d4cf660deeb855767bf553aa9de75c2c23fc"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0063",
+          "bytes": 3145728,
+          "sha256": "e6b929fc5de422423fb4b4beeaeaf21587ce78bfaf111731948da7958f2b8297"
+        },
+        {
+          "name": "modelos-ativos.zip.segment0064",
+          "bytes": 2646747,
+          "sha256": "8034745fa9cc4b381b23fe96ff3b6881beb4a5263d6ab47de863e45f1485d181"
         }
       ],
       "files": [
