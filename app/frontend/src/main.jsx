@@ -107,7 +107,12 @@ function App() {
     whisper_model: "base",
     source_url: "",
     avoid_duplicates: true,
+    layout: "split",
+    flow_actor_id: "",
+    seam_text: "",
   });
+  const [reactAssets, setReactAssets] = useState([]);
+  useEffect(() => { api("/api/react-assets").then(setReactAssets).catch(() => setReactAssets([])); }, []);
   const [advanced, setAdvanced] = useState(false);
   const [draft, setDraft] = useState(null);
   const [plan, setPlan] = useState(null);
@@ -432,6 +437,26 @@ function App() {
                   Preencha para substituir a quantidade escrita no pedido.
                 </small>
               </label>
+              <label className="target-control">
+                Composição do vídeo
+                <select value={options.layout} onChange={(event) => updateOption("layout", event.target.value)}>
+                  <option value="split">Cortes tradicionais</option>
+                  <option value="flow_react">React: ator Flow em cima, gameplay embaixo</option>
+                </select>
+              </label>
+              {options.layout === "flow_react" && <div className="advanced-options">
+                <label>Ator com áudio do Flow
+                  <select value={options.flow_actor_id} onChange={(event) => updateOption("flow_actor_id", event.target.value)} required>
+                    <option value="">Escolha um vídeo local cadastrado</option>
+                    {reactAssets.map((asset) => <option key={asset.id} value={asset.id}>{asset.name}</option>)}
+                  </select>
+                </label>
+                <label>Texto na divisão central
+                  <input maxLength={100} value={options.seam_text} onChange={(event) => updateOption("seam_text", event.target.value)} placeholder="Em branco: usar o hook do corte" />
+                </label>
+                <p>9:16 · áudio exclusivo do ator Flow. O corte precisa caber na duração do ator. As legendas da fonte não são usadas como fala do ator.</p>
+                {!reactAssets.length && <p>Nenhum ator cadastrado. Adicione um MP4 com áudio do Flow ao catálogo local.</p>}
+              </div>}
               <div className="research-footer">
                 <span>YouTube · pesquisa e edição locais</span>
                 <button

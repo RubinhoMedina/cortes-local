@@ -13,6 +13,7 @@ import zipfile
 
 import batch
 import planning
+import react_assets
 import process_lifetime
 import storage
 
@@ -117,6 +118,8 @@ class Handler(BaseHTTPRequestHandler):
                 self.json({"local_model_ready": (ROOT / "models/argos/translate-en_pt-1_9/model/model.bin").exists(),
                            "research_provider": "YouTube · yt-dlp", "paid_services": False,
                            "active_job": MANAGER.active, "default_topic": "GTA 6", "planner_version":planning.VERSION})
+            elif path == "/api/react-assets":
+                self.json(react_assets.catalog())
             elif path == "/api/jobs":
                 self.json(storage.jobs())
             elif len(parts) == 3 and parts[:2] == ["api", "jobs"]:
@@ -176,6 +179,11 @@ class Handler(BaseHTTPRequestHandler):
             parts = urllib.parse.urlparse(self.path).path.strip("/").split("/")
             if parts == ["api", "jobs"]:
                 job = storage.create(validate_options(body))
+                try:
+                    react_assets.copy_to_job(job)
+                except Exception as error:
+                    storage.update(job['id'],status='error',error=str(error),message=str(error))
+                    raise ValueError(str(error)) from error
                 MANAGER.submit(job["id"])
                 self.json(job, 201)
             elif parts == ['api','plan']:

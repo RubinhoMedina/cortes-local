@@ -1,4 +1,5 @@
 """Converte tema ou pedido simples em um plano explícito e limitado de produção."""
+import react_assets
 import math
 import re
 import urllib.parse
@@ -56,7 +57,8 @@ def make_plan(data):
              'Processamento local, um vídeo e um corte por vez. Lotes grandes podem levar várias horas.']
     if url:
         notes.append('Com uma fonte específica, o limite é o conteúdo desse vídeo; outras fontes não serão pesquisadas.')
-    return {'planner_version': VERSION, 'request': original, 'topic': topic, 'target_clips': target,
+    layout_options = react_assets.options(data)
+    return {**layout_options, 'planner_version': VERSION, 'request': original, 'topic': topic, 'target_clips': target,
             'max_sources': sources, 'max_clips': per_video, 'max_search_rounds': rounds,
             'max_duration_minutes': duration, 'whisper_model': model, 'source_url': url,
             'avoid_duplicates': bool(data.get('avoid_duplicates', True)), 'notes': notes}

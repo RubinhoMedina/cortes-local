@@ -220,6 +220,14 @@ class Pipeline(BasePipeline):
         self.check(identifier)
         render_clip = dict(clip,lines=package['translations'],subtitle_language='pt',
                            translation_status='automática; revisar',title=package['hook'][:80])
+        if config.get('layout') == 'flow_react':
+            actor = storage.DATA/identifier/'assets/flow-actor.mp4'
+            if not actor.is_file() or hashlib.sha256(actor.read_bytes()).hexdigest() != config.get('flow_actor_sha256'):
+                raise RuntimeError('Ator Flow do lote ausente ou alterado. Inicie um novo lote com o ativo correto.')
+            (directory/'assets').mkdir(exist_ok=True)
+            shutil.copy2(actor,directory/'assets/flow-actor.mp4')
+            render_clip.update(layout='flow_react',flow_actor='assets/flow-actor.mp4',
+                               seam_text=config.get('seam_text') or package['hook'][:100])
         render_config = {'url':video['url'],'transcript':'audio.json','clips':[render_clip],
                          'sources':self.source_catalog(video)}
         atomic_json(directory/'lote.json',render_config)
@@ -241,7 +249,9 @@ class Pipeline(BasePipeline):
                   'source_ranges':clip['edit'],'source_words':clip['source_words'],
                   'duration':round(sum(b-a for a,b in clip['edit']),2),'file':str(output),
                   'media':output.relative_to(storage.DATA/identifier).as_posix(),
-                  'export_sha256':digest,'subtitle_language':'pt','status':'review','selected_cover':0}
+                  'layout':render_clip.get('layout','split'),'audio_source':'flow' if config.get('layout')=='flow_react' else 'source',
+                  'export_sha256':digest,'subtitle_language':None if config.get('layout')=='flow_react' else 'pt',
+                  'caption_mode':'seam_title' if config.get('layout')=='flow_react' else 'source_subtitles','status':'review','selected_cover':0}
         result['covers'] = self.covers(identifier,result,directory,runner)
         return result
 
@@ -274,6 +284,10 @@ class Pipeline(BasePipeline):
             if not (folder/filename).exists() or (folder/filename).read_bytes() != (LEGACY/filename).read_bytes():
                 shutil.copy2(LEGACY/filename,folder/filename)
         candidates = selection['clips']
+        if options.get('layout') == 'flow_react':
+            candidates = [clip for clip in candidates if sum(b-a for a,b in clip['edit']) <= options.get('flow_actor_duration',0)+.08]
+            if not candidates:
+                self.warn(identifier,'Nenhum candidato cabe na duração do ator Flow. Gere uma fala maior no Flow ou use uma fonte com cortes menores.')
         best = max((clip['selection']['score'] for clip in candidates),default=0)
         made, failures, duplicates = 0, [], 0
         for clip in candidates:
